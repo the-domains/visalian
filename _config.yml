@@ -1,6 +1,6 @@
 name: Visalian
 favicon: null
-layout_spectrum: 0.7849700956139714
+layout_spectrum: 1
 typography_spectrum: 0.2986602333839983
 cta:
   domain: null
@@ -16,7 +16,7 @@ opengraph:
   appId: null
 color:
   brandColors: []
-  brandStrength: 0.0637159519828856
+  brandStrength: 0.0625
   lightness: 0.17284383391961455
   saturation: 0.32527831895276904
   rhythmicContrast: 0.9983284454792738
