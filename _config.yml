@@ -2,12 +2,13 @@ name: Visalian
 favicon: null
 layout_spectrum: 1
 typography_spectrum: 0.2986602333839983
+title: Visalian
 cta:
   domain: null
   bucket: null
   version: null
 analytics:
-  google: null
+  google: UA-68822801-2
   facebook: null
   twitter: null
 opengraph:
