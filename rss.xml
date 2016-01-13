@@ -4,11 +4,11 @@
         <description><![CDATA[Visalian]]></description>
         <link>http://visalian.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Tue, 12 Jan 2016 23:17:09 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 13 Jan 2016 06:28:33 GMT</lastBuildDate>
         <atom:link href="http://visalian.com/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[ZigBee 3.0 to Include Energy Harvesting | EE Times]]></title>
-            <description><![CDATA[<article><h1>ZigBee 3.0 to Include Energy Harvesting | EE Times</h1><p>The ZigBee Alliance industry association has said that it will work to combine EnOcean energy harvesting with ZigBee 3.0 to help address a breadth of IoT applications in smart home, smart city and industry 4.0.</p><img src="http://img.deusm.com/eetimes/2015/12/1328537/caroimagezigbee.png"></article>]]></description>
+            <description><![CDATA[<article><h1>ZigBee 3.0 to Include Energy Harvesting | EE Times</h1><p>The ZigBee Alliance industry association has said that it will work to combine EnOcean energy harvesting with ZigBee 3.0 to help address a breadth of IoT applications in smart home, smart city and industry 4.0.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/c3761f41783ae484f42286231bc6750866511db1.png"></article>]]></description>
             <link>http://www.eetimes.com/document.asp?doc_id=1328537</link>
             <guid isPermaLink="false">935ae8f0-4204-481a-aaea-a1923347f58a</guid>
             <pubDate>Tue, 12 Jan 2016 23:17:09 GMT</pubDate>
@@ -40,13 +40,6 @@
             <link>https://www.eff.org/deeplinks/2016/01/china-shows-how-backdoors-lead-software-censorship</link>
             <guid isPermaLink="false">7c0e390b-14cd-4709-985d-8fdb66ca2b53</guid>
             <pubDate>Sat, 09 Jan 2016 08:36:46 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Getting Started on The Grid]]></title>
-            <description><![CDATA[<article><h1>Getting Started on The Grid</h1><p>Click the pencil icon in the bottom left to read more...</p><img src="https://d33v4339jhl8k0.cloudfront.net/docs/assets/54dd53ebe4b086c0c0966e7a/images/5616ac809033602f2d9baebd/file-t8c0VXJ6mq.gif"></article>]]></description>
-            <link>http://visalian.com/getting-started-on-the-grid/index.html</link>
-            <guid isPermaLink="false">a3f9d3eb-95fd-4186-bf36-5cb62e0e66cf</guid>
-            <pubDate>Fri, 30 Oct 2015 20:33:16 GMT</pubDate>
         </item>
     </channel>
 </rss>
