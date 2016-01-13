@@ -2,15 +2,15 @@ analytics:
   google: UA-68822801-2
 color:
   brandColors:
-    - '#ffffff'
-    - '#f58220'
-    - '#008cd2'
-    - '#ed028c'
-    - '#540a00'
-  brandStrength: 0.625
+    - '#A8C0C8'
+    - '#000000'
+    - '#7090A0'
+    - '#000000'
+    - '#A8D0E0'
+  brandStrength: 1
   lightness: 0.125
-  rhythmicContrast: 0.25
-  saturation: 0.32527831895276904
+  rhythmicContrast: 0.648026
+  saturation: 0.258223
 cta: {}
 layout_spectrum: 0.893092
 name: Visalian
