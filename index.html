@@ -1,4 +1,4 @@
-<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>Visalian</title><link href="rss.xml" title="Visalian feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.17.3"><meta name="the-grid-solution" content="15c2f56a-4f58-4e04-9ce3-6819f0406748"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
+<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>Visalian</title><link href="rss.xml" title="Visalian feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.17.17"><meta name="the-grid-solution" content="f2200eb4-9a90-429c-8e4e-75b66c061bc4"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
 @media (min-width: 15.6875em)and (max-width: 15.75em){	html{font-size:3.28125em !important}}
 @media (min-width: 15.8125em)and (max-width: 16.25em){	html{font-size:3.375em !important}}
 @media (min-width: 16.3125em)and (max-width: 16.6875em){html{font-size:3.46875em !important}}
@@ -203,13 +203,6 @@ body {
 .stack {
   z-index: 1;
   transition: transform 0.3s ease-out;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-}
-.group,
-.aside,
-.decoration {
-  transition: transform 0.3s ease-out;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
 }
 picture {
   display: inline-block;
@@ -270,10 +263,6 @@ html.exporting a {
 .media > a {
   display: inline-block;
 }
-.media iframe {
-  transition: 0.3s opacity ease-in;
-  -webkit-transition: 0.3s opacity ease-in;
-}
 h1 a,
 h2 a,
 h3 a {
@@ -294,15 +283,11 @@ a {
   padding-top: 1px;
   padding-bottom: 1px;
 }
-.text li {
-  margin-left: 1.5em;
-}
 .decoration {
   pointer-events: none;
 }
 .svg {
   position: relative;
-  background-color: currentColor;
 }
 .svg > svg {
   position: absolute;
@@ -328,6 +313,9 @@ a {
 .svg polyline {
   stroke: currentColor;
 }
+.decoration {
+  background-color: currentColor;
+}
 .svg {
   background-color: transparent;
 }
@@ -343,12 +331,39 @@ a {
   background-color: currentColor;
   content: "";
 }
-.colors-style-aside-border .publisher,
-.colors-style-aside-border .author {
-  padding: .4vw .6vw;
+.revealed,
+.revealed > * {
+  pointer-events: none;
 }
-.cover_only_header:first-of-type {
-  position: fixed;
+.revealed .aside,
+.revealed a {
+  pointer-events: all;
+}
+.revealed {
+  background-image: none !important;
+  background-color: none !important;
+}
+.stack,
+.group,
+.aside,
+.decoration,
+.media,
+html body a.media,
+.media img,
+.media picture,
+iframe {
+  min-width: 0;
+  min-height: 0;
+  transition-duration: .3s;
+  transition-property: transform, color, background-color, opacity, clip, z-index, border-width;
+  transition-timing-function: ease-out;
+  -webkit-transition-duration: .3s;
+  -webkit-transition-property: -webkit-transform, color, background-color, opacity, clip, z-index, border-width;
+  -webkit-transition-timing-function: ease-out;
+}
+.media img {
+  transition-property: transform, color, background-color;
+  -webkit-transition-property: -webkit-transform, color, background-color;
 }
 .decoration {
   z-index: 3;
@@ -361,7 +376,7 @@ ul {
 }
 .panel .heading {
   text-transform: uppercase;
-  letter-spacing: .03rem;
+  letter-spacing: 1px;
 }
 .listing:not(.open) .shadow-overlay {
   pointer-events: none;
@@ -376,17 +391,6 @@ ul {
 .group .text,
 .group .aside {
   z-index: 2;
-}
-.group button {
-  border-radius: 3px;
-  padding: 15px 25px;
-  margin-top: 36px;
-}
-.group button:hover {
-  opacity: .8;
-}
-.group .attribution {
-  overflow: hidden;
 }
 .group .attribution:after {
   display: block;
@@ -459,6 +463,7 @@ ul {
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav-g-heading-t-headline#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav-g-heading-t-headline{font-size: 0.244rem; line-height: 0.324rem; width: 4.324rem; position: absolute; top: 0rem; left: 0.124rem;}
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading > .title.headline { color: rgb(218, 235, 241); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading > .title.headline a:hover { color: rgb(213, 229, 236); }
+#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading { background-color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a { color: rgb(160, 181, 192); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a:hover { color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a:active { color: rgb(0, 0, 0); }
@@ -653,6 +658,7 @@ ul {
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline{font-size: 0.244rem; line-height: 0.324rem; width: 3.844rem; position: absolute; top: 0rem; left: 0.124rem;}
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading > .title.headline { color: rgb(218, 235, 241); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading > .title.headline a:hover { color: rgb(213, 229, 236); }
+#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading { background-color: rgb(31, 42, 46); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a { color: rgb(160, 181, 192); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a:hover { color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a:active { color: rgb(0, 0, 0); }
@@ -687,6 +693,7 @@ display: none;
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav-g-heading-t-headline#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav-g-heading-t-headline{font-size: 0.244rem; line-height: 0.324rem; width: 6.484rem; position: absolute; top: 0rem; left: 0.184rem;}
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading > .title.headline { color: rgb(218, 235, 241); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading > .title.headline a:hover { color: rgb(213, 229, 236); }
+#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading { background-color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a { color: rgb(160, 181, 192); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a:hover { color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a:active { color: rgb(0, 0, 0); }
@@ -881,6 +888,7 @@ display: none;
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline{font-size: 0.244rem; line-height: 0.324rem; width: 5.764rem; position: absolute; top: 0rem; left: 0.184rem;}
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading > .title.headline { color: rgb(218, 235, 241); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading > .title.headline a:hover { color: rgb(213, 229, 236); }
+#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading { background-color: rgb(31, 42, 46); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a { color: rgb(160, 181, 192); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a:hover { color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a:active { color: rgb(0, 0, 0); }
@@ -915,6 +923,7 @@ display: none;
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav-g-heading-t-headline#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav-g-heading-t-headline{font-size: 0.244rem; line-height: 0.324rem; width: 8.644rem; position: absolute; top: 0rem; left: 0.244rem;}
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading > .title.headline { color: rgb(218, 235, 241); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading > .title.headline a:hover { color: rgb(213, 229, 236); }
+#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading { background-color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a { color: rgb(160, 181, 192); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a:hover { color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a:active { color: rgb(0, 0, 0); }
@@ -1110,6 +1119,7 @@ display: none;
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline{font-size: 0.244rem; line-height: 0.324rem; width: 7.684rem; position: absolute; top: 0rem; left: 0.244rem;}
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading > .title.headline { color: rgb(218, 235, 241); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading > .title.headline a:hover { color: rgb(213, 229, 236); }
+#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading { background-color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a { color: rgb(160, 181, 192); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a:hover { color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a:active { color: rgb(0, 0, 0); }
@@ -1144,6 +1154,7 @@ display: none;
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav-g-heading-t-headline#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav-g-heading-t-headline{font-size: 0.244rem; line-height: 0.324rem; width: 12.964rem; position: absolute; top: 0rem; left: 0.364rem;}
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading > .title.headline { color: rgb(218, 235, 241); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading > .title.headline a:hover { color: rgb(213, 229, 236); }
+#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading { background-color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a { color: rgb(160, 181, 192); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a:hover { color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a:active { color: rgb(0, 0, 0); }
@@ -1339,6 +1350,7 @@ display: none;
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline{font-size: 0.244rem; line-height: 0.324rem; width: 11.524rem; position: absolute; top: 0rem; left: 0.364rem;}
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading > .title.headline { color: rgb(218, 235, 241); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading > .title.headline a:hover { color: rgb(213, 229, 236); }
+#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading { background-color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a { color: rgb(160, 181, 192); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a:hover { color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a:active { color: rgb(0, 0, 0); }
@@ -1373,6 +1385,7 @@ display: none;
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav-g-heading-t-headline#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav-g-heading-t-headline{font-size: 0.304rem; line-height: 0.394rem; width: 16.204rem; position: absolute; top: 0rem; left: 0.454rem;}
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading > .title.headline { color: rgb(218, 235, 241); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading > .title.headline a:hover { color: rgb(213, 229, 236); }
+#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading { background-color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a { color: rgb(160, 181, 192); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a:hover { color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a:active { color: rgb(0, 0, 0); }
@@ -1568,6 +1581,7 @@ display: none;
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline{font-size: 0.304rem; line-height: 0.394rem; width: 14.404rem; position: absolute; top: 0rem; left: 0.454rem;}
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading > .title.headline { color: rgb(218, 235, 241); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading > .title.headline a:hover { color: rgb(213, 229, 236); }
+#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading { background-color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a { color: rgb(160, 181, 192); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a:hover { color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a:active { color: rgb(0, 0, 0); }
@@ -1602,6 +1616,7 @@ display: none;
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav-g-heading-t-headline#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav-g-heading-t-headline{font-size: 0.234rem; line-height: 0.304rem; width: 16.204rem; position: absolute; top: 0rem; left: 0.454rem;}
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading > .title.headline { color: rgb(218, 235, 241); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading > .title.headline a:hover { color: rgb(213, 229, 236); }
+#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav .group.heading { background-color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a { color: rgb(160, 181, 192); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a:hover { color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-nav a:active { color: rgb(0, 0, 0); }
@@ -1797,6 +1812,7 @@ display: none;
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline{font-size: 0.234rem; line-height: 0.304rem; width: 14.404rem; position: absolute; top: 0rem; left: 0.454rem;}
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading > .title.headline { color: rgb(218, 235, 241); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading > .title.headline a:hover { color: rgb(213, 229, 236); }
+#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate .group.heading { background-color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a { color: rgb(160, 181, 192); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a:hover { color: rgb(0, 0, 0); }
 #u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate#u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate a:active { color: rgb(0, 0, 0); }
@@ -1836,7 +1852,7 @@ display: none;
 	 viewBox="0 0 72 72" enable-background="new 0 0 72 72" xml:space="preserve">
 <path fill="#808285" d="M36,2.3L0.3,64.7h71.4L36,2.3z M36,8.3l30.6,53.4H5.4L36,8.3z"/>
 </svg>
-</div><h1 kind="title" index="headline" class="long long_headline long_title title headline vfld-leader title headline" specificity="0.25" itemprop="title" id="u-47626f81-4d4f-4c84-94f5-ea460c6b447f-g-textual-t-headline"><a class="text-decoration" href="http://nextmarket.co/blogs/smarthomeweekly/101249799-hedge-vs-wedge-alexa-ces-and-the-difference-between-amazon-and-apple-smart-home-strategies" id="u-47626f81-4d4f-4c84-94f5-ea460c6b447f-g-textual-t-headline-a">Hedge Vs.<wbr class="w480 w960"></wbr> Wedge: <wbr class="w481 w961 w1799"></wbr>Alexa, <wbr class="w480 w960"></wbr>CES<wbr class="w1800"></wbr> and The <wbr class="w480 w481 w960 w961 w1799"></wbr>Difference <wbr class="w480 w960"></wbr>Between<wbr class="w481 w961 w1799"></wbr> <wbr class="w480 w960 w1800"></wbr>Amazon and <wbr class="w480 w960"></wbr>Apple <wbr class="w481 w961 w1799"></wbr>Smart<wbr class="w1800"></wbr> <wbr class="w480 w960"></wbr>Home<wbr class="w480 w960"></wbr> Strategies</a></h1><div kind="aside" index="attribution" class="aside attribution aside attribution" id="u-47626f81-4d4f-4c84-94f5-ea460c6b447f-g-textual-a-attribution"><a kind="aside" index="publisher" class="text-decoration aside publisher aside publisher" href="http://nextmarket.co/blogs/smarthomeweekly/101249799-hedge-vs-wedge-alexa-ces-and-the-difference-between-amazon-and-apple-smart-home-strategies" itemprop="publisher" id="u-47626f81-4d4f-4c84-94f5-ea460c6b447f-g-textual-a-attribution-a-publisher">NextMarket</a></div></div><a kind="media" index="cover" itemprop="cover" class="media cover media cover" max-width="591" max-height="447" href="http://nextmarket.co/blogs/smarthomeweekly/101249799-hedge-vs-wedge-alexa-ces-and-the-difference-between-amazon-and-apple-smart-home-strategies" id="u-47626f81-4d4f-4c84-94f5-ea460c6b447f-m-cover"><picture id="u-47626f81-4d4f-4c84-94f5-ea460c6b447f-m-cover-img" class=""><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591 2x" media="(min-width: 1441px) and (min-width: 1441px) and (max-width: 1799px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591 2x" media="(min-width: 1441px) and (min-width: 1800px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591 2x" media="(min-width: 721px) and (min-width: 721px) and (max-width: 960px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591 2x" media="(min-width: 721px) and (min-width: 961px) and (max-width: 1440px)" /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591 2x" media="(min-width: 1px) and (max-width: 480px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591 2x" media="(min-width: 1px) and (min-width: 481px) and (max-width: 720px)" /><!--[if IE 9]></video><![endif]--><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="  /></picture></a></article><article subject="stack" class="col-1 export-linebreaks uninverted vertical line_padding_aside_inside text_width_wider not_decorated group_h_align_none text_align_left flow_unreversed group_v_outset_none group_v_inset_small group_h_outset_none group_h_inset_small flow_vertical font_size_large color_adjust_none color_styles_high_text_emphasis_no_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_xsmall stack_h_outset_none stack_h_inset_xsmall stack_h_align_center collapsed full aspect_natural stack graphical_heading ii first_stack graphical heading w_cover w_media w_decoration media_lt_narrow media_lt_half media_lt_wide media_lt_full media_landscape crop_true w_headline w_title w_attribution w_aside w_medium_headline w_medium_title w_publisher stack graphical_heading" itemid="935ae8f0-4204-481a-aaea-a1923347f58a" itemtype="article" diff_index="9" index="graphical_heading" kind="stack" score="5.875" missed="0.125" tag="article" id="u-935ae8f0-4204-481a-aaea-a1923347f58a"><div kind="group" index="graphical" class="group graphical group graphical" id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-graphical"><a kind="media" index="cover" class="vfld media cover vfld-leader vfld-trailer media cover" specificity="0.25" itemprop="cover" max-width="287" max-height="210" href="http://www.eetimes.com/document.asp?doc_id=1328537" id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-graphical-m-cover"><picture id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-graphical-m-cover-img" class=""><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287 2x" media="(min-width: 1441px) and (min-width: 1441px) and (max-width: 1799px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287 2x" media="(min-width: 1441px) and (min-width: 1800px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8aebc4ceea3d309507e36f492f0b15bb/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=183&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=250, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287 2x" media="(min-width: 721px) and (min-width: 721px) and (max-width: 960px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287 2x" media="(min-width: 721px) and (min-width: 961px) and (max-width: 1440px)" /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287 2x" media="(min-width: 1px) and (max-width: 480px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287 2x" media="(min-width: 1px) and (min-width: 481px) and (max-width: 720px)" /><!--[if IE 9]></video><![endif]--><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="  /></picture></a></div><div kind="group" index="heading" class="group heading group heading" id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-heading"><h1 kind="title" index="headline" class="medium medium_headline medium_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-heading-t-headline"><a class="text-decoration" href="http://www.eetimes.com/document.asp?doc_id=1328537" id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-heading-t-headline-a">ZigBee <wbr class="w960"></wbr>3.0 to <wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Include <wbr class="w480 w960"></wbr>Energy <wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Harvesting <wbr class="w960"></wbr>| <wbr class="w480"></wbr>EE <wbr class="w481 w961 w1799 w1800"></wbr>Times</a></h1><div kind="aside" index="attribution" class="aside attribution aside attribution" id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-heading-a-attribution"><a kind="aside" index="publisher" class="text-decoration aside publisher aside publisher" href="http://www.eetimes.com/document.asp?doc_id=1328537" itemprop="publisher" id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-heading-a-attribution-a-publisher">EETimes</a></div></div></article><article subject="stack" class="col-1 export-linebreaks uninverted vertical line_padding_aside_inside text_width_wider not_decorated group_h_align_none text_align_left flow_unreversed group_v_outset_none group_v_inset_small group_h_outset_none group_h_inset_small flow_vertical font_size_large color_adjust_none color_styles_high_text_emphasis_no_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_xsmall stack_h_outset_none stack_h_inset_xsmall stack_h_align_center collapsed full aspect_natural stack graphical_heading ii graphical heading w_cover w_media w_decoration media_gte_narrow media_gte_half media_gte_wide media_lt_full media_landscape crop_true w_headline w_title w_attribution w_aside w_long_headline w_long_title w_publisher stack graphical_heading" itemid="fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc" itemtype="article" diff_index="9" index="graphical_heading" kind="stack" score="5.875" missed="0.125" tag="article" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc"><div kind="group" index="graphical" class="group graphical group graphical" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-graphical"><a kind="media" index="cover" class="vfld media cover vfld-leader vfld-trailer media cover" specificity="0.25" itemprop="cover" max-width="1000" max-height="367" href="https://boingboing.net/2016/01/09/now-that-they-know-the-nsa-is.html" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-graphical-m-cover"><picture id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-graphical-m-cover-img" class=""><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/73ca30746e43ef48e24989b1f7e201c4/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=342&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=931, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8b23515522ed54a994b5c994e9eb5602/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=367&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1000 2x" media="(min-width: 1441px) and (min-width: 1441px) and (max-width: 1799px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/19cc0fc65f334091f28af46889acb3b9/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=342&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=932, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8b23515522ed54a994b5c994e9eb5602/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=367&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1000 2x" media="(min-width: 1441px) and (min-width: 1800px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/c9b816cee2095956e22caaaa0e07d03a/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=183&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=497, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/66cbf9da5fb9427d41767b6346c7260e/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=366&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=994 2x" media="(min-width: 721px) and (min-width: 721px) and (max-width: 960px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/9bc8e21c658dac3ac50665cc1cebe021/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=274&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=745, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8b23515522ed54a994b5c994e9eb5602/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=367&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1000 2x" media="(min-width: 721px) and (min-width: 961px) and (max-width: 1440px)" /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d46b4ef80b4d35158334b2bd90096515/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=150&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=409, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c99e548d4eef09d5480fa84d7fde389/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=300&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=818 2x" media="(min-width: 1px) and (max-width: 480px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d0c0c1fc5b89ef22d95a8a1a0d4f4c50/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=225&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=613, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8b23515522ed54a994b5c994e9eb5602/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=367&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1000 2x" media="(min-width: 1px) and (min-width: 481px) and (max-width: 720px)" /><!--[if IE 9]></video><![endif]--><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="  /></picture></a></div><div kind="group" index="heading" class="group heading group heading" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-heading"><h1 kind="title" index="headline" class="long long_headline long_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-heading-t-headline"><a class="text-decoration" href="https://boingboing.net/2016/01/09/now-that-they-know-the-nsa-is.html" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-heading-t-headline-a">Now that they <wbr class="w480 w960"></wbr>know <wbr class="w481"></wbr>the <wbr class="w961 w1799"></wbr>NSA <wbr class="w480"></wbr>is <wbr class="w960 w1800"></wbr>spying on <wbr class="w480 w481"></wbr>them, <wbr class="w480 w960 w961 w1799"></wbr>Congress is <wbr class="w480 w481"></wbr>really <wbr class="w960 w1800"></wbr>worried <wbr class="w480 w961 w1799"></wbr>about <wbr class="w480 w481 w960"></wbr>domestic <wbr class="w480 w960 w961 w1799 w1800"></wbr>surveillance</a></h1><div kind="aside" index="attribution" class="aside attribution aside attribution" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-heading-a-attribution"><a kind="aside" index="publisher" class="text-decoration aside publisher aside publisher" href="https://boingboing.net/2016/01/09/now-that-they-know-the-nsa-is.html" itemprop="publisher" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-heading-a-attribution-a-publisher">Boing Boing</a></div></div></article><article subject="stack" class="col-1 export-linebreaks uninverted vertical line_padding_aside_inside text_width_wider not_decorated group_h_align_none text_align_left flow_unreversed group_v_outset_none group_v_inset_small group_h_outset_none group_h_inset_small flow_vertical font_size_large color_adjust_none color_styles_high_text_emphasis_no_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_xsmall stack_h_outset_none stack_h_inset_xsmall stack_h_align_center collapsed full aspect_natural stack graphical_heading ii graphical heading w_cover w_media w_decoration media_gte_narrow media_gte_half media_gte_wide media_gte_full media_landscape crop_true w_headline w_title w_attribution w_aside w_short_headline w_short_title w_author w_publisher stack graphical_heading" itemid="1c9c5ae7-481c-459e-8bef-eeb0605e53eb" itemtype="article" diff_index="9" index="graphical_heading" kind="stack" score="5.875" missed="0.125" tag="article" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb"><div kind="group" index="graphical" class="group graphical group graphical" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-graphical"><a kind="media" index="cover" class="vfld media cover vfld-leader vfld-trailer media cover" specificity="0.25" itemprop="cover" max-width="1971" max-height="1178" href="http://businessoverbroadway.com/top-10-skills-in-data-science" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-graphical-m-cover"><picture id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-graphical-m-cover-img" class=""><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/0c828309a40d6207851e294951eef55e/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=377&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=630, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/c1683a4d0c01dcc3a1e99ef1a7f492c5/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=754&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1260 2x" media="(min-width: 1441px) and (min-width: 1441px) and (max-width: 1799px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/0c828309a40d6207851e294951eef55e/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=377&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=630, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/c1683a4d0c01dcc3a1e99ef1a7f492c5/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=754&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1260 2x" media="(min-width: 1441px) and (min-width: 1800px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/77d9cf6744b6857f0b3551cc3a0bda8a/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=201&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=336, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/fb154a1889d91a1596cd02231b1f93e3/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=402&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=672 2x" media="(min-width: 721px) and (min-width: 721px) and (max-width: 960px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/f547dac9bef785a35ac3f0d0791975e8/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=302&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=504, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/1d9d27dd7d4842efb1c4000747fa404b/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=604&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1008 2x" media="(min-width: 721px) and (min-width: 961px) and (max-width: 1440px)" /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/4e95b2f0b5cb7156184777eda401c536/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=244&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=408, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/ab3266109ddec5ea359934e342bdd5ef/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=488&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=816 2x" media="(min-width: 1px) and (max-width: 480px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d6aaef9cccda187c64000e9fff6dad77/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=366&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=612, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/166befcb7d2dc6655b10730b26dec0ae/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=732&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1224 2x" media="(min-width: 1px) and (min-width: 481px) and (max-width: 720px)" /><!--[if IE 9]></video><![endif]--><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="  /></picture></a></div><div kind="group" index="heading" class="group heading group heading" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-heading-t-headline"><a class="text-decoration" href="http://businessoverbroadway.com/top-10-skills-in-data-science" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-heading-t-headline-a">Top 10 <wbr class="w960"></wbr>Skills <wbr class="w480 w961 w1799"></wbr>in <wbr class="w960 w1800"></wbr>Data <wbr class="w480 w481 w960 w961 w1799"></wbr>Science</a></h1><div kind="aside" index="attribution" class="aside attribution aside attribution" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-heading-a-attribution"><a kind="aside" index="author" class="text-decoration aside author aside author" href="http://businessoverbroadway.com/author/bobhayes" itemprop="author" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-heading-a-attribution-a-author">Bob Hayes</a><a kind="aside" index="publisher" class="text-decoration aside publisher aside publisher" href="http://businessoverbroadway.com/top-10-skills-in-data-science" itemprop="publisher" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-heading-a-attribution-a-publisher">@bobehayes</a></div></div></article><article subject="stack" class="col-1 export-linebreaks uninverted vertical line_padding_aside_inside text_width_wider not_decorated group_h_align_none text_align_left flow_unreversed group_v_outset_none group_v_inset_small group_h_outset_none group_h_inset_small flow_vertical font_size_large color_adjust_none color_styles_high_text_emphasis_no_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_xsmall stack_h_outset_none stack_h_inset_xsmall stack_h_align_center collapsed full aspect_natural stack graphical_heading ii graphical heading w_cover w_media w_decoration media_gte_narrow media_lt_half media_lt_wide media_lt_full media_portrait crop_true w_headline w_title w_attribution w_aside w_long_headline w_long_title w_publisher stack graphical_heading" itemid="1982101e-4805-4db6-a7ad-a72366ce7c4b" itemtype="article" diff_index="9" index="graphical_heading" kind="stack" score="5.875" missed="0.125" tag="article" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b"><div kind="group" index="graphical" class="group graphical group graphical" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-graphical"><a kind="media" index="cover" class="vfld media cover vfld-leader vfld-trailer media cover" specificity="0.25" itemprop="cover" max-width="511" max-height="512" href="https://blog.ethereum.org/2015/11/24/applications-of-security-deposits-and-prediction-markets-you-might-not-have-thought-about/" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-graphical-m-cover"><picture id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-graphical-m-cover-img" class=""><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/f50b225693faab993ec5d4552b9b8000/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=451&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=450, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8247177bae8577b97ad8ce0582c3663c/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=512&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=511 2x" media="(min-width: 1441px) and (min-width: 1441px) and (max-width: 1799px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/f50b225693faab993ec5d4552b9b8000/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=451&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=450, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8247177bae8577b97ad8ce0582c3663c/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=512&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=511 2x" media="(min-width: 1441px) and (min-width: 1800px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/7aabc1a1ca777645f464200f7e356cdf/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=241&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=241, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/4b07619831f0c2b9ee4781417b86a34b/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=482&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=482 2x" media="(min-width: 721px) and (min-width: 721px) and (max-width: 960px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d268c8a6dd55153bfe202f2fb818cd47/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=361&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=361, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8247177bae8577b97ad8ce0582c3663c/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=512&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=511 2x" media="(min-width: 721px) and (min-width: 961px) and (max-width: 1440px)" /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5b96c52638c1e0db5dcacface35ef977/gradientmap.jpg?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=409&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=409, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/4a117cb65fb35d07f5e0c0b85379a08c/gradientmap.jpg?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=512&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=511 2x" media="(min-width: 1px) and (max-width: 480px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/4a117cb65fb35d07f5e0c0b85379a08c/gradientmap.jpg?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=512&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=511, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/4a117cb65fb35d07f5e0c0b85379a08c/gradientmap.jpg?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=512&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=511 2x" media="(min-width: 1px) and (min-width: 481px) and (max-width: 720px)" /><!--[if IE 9]></video><![endif]--><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="  /></picture></a></div><div kind="group" index="heading" class="group heading group heading" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-heading"><h1 kind="title" index="headline" class="long long_headline long_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-heading-t-headline"><a class="text-decoration" href="https://blog.ethereum.org/2015/11/24/applications-of-security-deposits-and-prediction-markets-you-might-not-have-thought-about/" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-heading-t-headline-a">Applications <wbr class="w480 w960"></wbr>of <wbr class="w481 w961 w1799 w1800"></wbr>Security <wbr class="w480 w960 w961 w1799"></wbr>Deposits <wbr class="w481 w960 w1800"></wbr>and <wbr class="w480 w960 w961 w1799"></wbr>Prediction <wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Markets <wbr class="w960"></wbr>You <wbr class="w480 w961 w1799"></wbr>Might <wbr class="w481 w960 w1800"></wbr>Not <wbr class="w480"></wbr>Have <wbr class="w960 w961 w1799"></wbr>Thought <wbr class="w480 w481 w960 w1800"></wbr>About <wbr class="w961 w1799"></wbr>- <wbr class="w480 w960"></wbr>Ethereum <wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Blog</a></h1><div kind="aside" index="attribution" class="aside attribution aside attribution" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-heading-a-attribution"><a kind="aside" index="publisher" class="text-decoration aside publisher aside publisher" href="https://blog.ethereum.org/2015/11/24/applications-of-security-deposits-and-prediction-markets-you-might-not-have-thought-about/" itemprop="publisher" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-heading-a-attribution-a-publisher">Ethereum Blog</a></div></div></article><article subject="stack" class="col-1 export-linebreaks uninverted vertical line_padding_aside_inside text_width_wider not_decorated group_h_align_none text_align_left flow_unreversed group_v_outset_none group_v_inset_small group_h_outset_none group_h_inset_small flow_vertical font_size_large color_adjust_none color_styles_high_text_emphasis_no_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_xsmall stack_h_outset_none stack_h_inset_xsmall stack_h_align_center collapsed full aspect_natural stack graphical_heading ii last_stack graphical heading w_cover w_media w_decoration media_gte_narrow media_gte_half media_gte_wide media_lt_full media_landscape crop_true w_headline w_title w_attribution w_aside w_long_headline w_long_title w_publisher stack graphical_heading" itemid="7c0e390b-14cd-4709-985d-8fdb66ca2b53" itemtype="article" diff_index="9" index="graphical_heading" kind="stack" score="5.875" missed="0.125" tag="article" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53"><div kind="group" index="graphical" class="group graphical group graphical" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-graphical"><a kind="media" index="cover" class="vfld media cover vfld-leader vfld-trailer media cover" specificity="0.25" itemprop="cover" max-width="1200" max-height="630" href="https://www.eff.org/deeplinks/2016/01/china-shows-how-backdoors-lead-software-censorship" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-graphical-m-cover"><picture id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-graphical-m-cover-img" class=""><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/829ef95819de654c50ff79afbd6918ad/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=450&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F595af12b22a553fae9ce85353c556e4a06893d44.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=857, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d10fc0063cb733609926a5fe21f02262/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=630&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F595af12b22a553fae9ce85353c556e4a06893d44.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1200 2x" media="(min-width: 1441px) and (min-width: 1441px) and (max-width: 1799px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/55578ef2e630134265b7a9fc8f4c745e/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=451&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F595af12b22a553fae9ce85353c556e4a06893d44.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=857, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d10fc0063cb733609926a5fe21f02262/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=630&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F595af12b22a553fae9ce85353c556e4a06893d44.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1200 2x" media="(min-width: 1441px) and (min-width: 1800px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/b03e383f3abb6a2a2702de5fc746b129/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=241&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F595af12b22a553fae9ce85353c556e4a06893d44.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=457, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/a627b545bf7eac2bc2808014093abb48/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=482&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F595af12b22a553fae9ce85353c556e4a06893d44.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=914 2x" media="(min-width: 721px) and (min-width: 721px) and (max-width: 960px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/0c6b05cb7458585df3f4b7dcba54e6a6/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=361&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F595af12b22a553fae9ce85353c556e4a06893d44.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=686, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d10fc0063cb733609926a5fe21f02262/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=630&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F595af12b22a553fae9ce85353c556e4a06893d44.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1200 2x" media="(min-width: 721px) and (min-width: 961px) and (max-width: 1440px)" /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5981c00c98e10feaa8cb3aa3dc31988b/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=215&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F595af12b22a553fae9ce85353c556e4a06893d44.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=409, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/ed90866db256127f87caaa6e6fb57324/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=430&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F595af12b22a553fae9ce85353c556e4a06893d44.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=818 2x" media="(min-width: 1px) and (max-width: 480px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d14c3ec5842109908ee77f4277fc672a/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=322&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F595af12b22a553fae9ce85353c556e4a06893d44.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=613, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/e81c239862a491def3c42409f74effc7/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=630&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F595af12b22a553fae9ce85353c556e4a06893d44.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1200 2x" media="(min-width: 1px) and (min-width: 481px) and (max-width: 720px)" /><!--[if IE 9]></video><![endif]--><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="  /></picture></a></div><div kind="group" index="heading" class="group heading group heading" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-heading"><h1 kind="title" index="headline" class="long long_headline long_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-heading-t-headline"><a class="text-decoration" href="https://www.eff.org/deeplinks/2016/01/china-shows-how-backdoors-lead-software-censorship" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-heading-t-headline-a">Your <wbr class="w960"></wbr>Apps, <wbr class="w480 w960 w961 w1799"></wbr>Please? <wbr class="w481 w960 w1800"></wbr>China <wbr class="w480 w960 w961 w1799"></wbr>Shows <wbr class="w960"></wbr>how <wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Surveillance <wbr class="w480 w960 w961 w1799"></wbr>Leads to <wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Intimidation <wbr class="w480 w960"></wbr>and <wbr class="w481 w960 w961 w1799 w1800"></wbr>Software <wbr class="w480 w960 w961 w1799"></wbr>Censorship</a></h1><div kind="aside" index="attribution" class="aside attribution aside attribution" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-heading-a-attribution"><a kind="aside" index="publisher" class="text-decoration aside publisher aside publisher" href="https://www.eff.org/deeplinks/2016/01/china-shows-how-backdoors-lead-software-censorship" itemprop="publisher" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-heading-a-attribution-a-publisher">Electronic Frontier <wbr class="w960"></wbr>Foundation</a></div></div></article><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline"><a class="text-decoration" href="rss.xml" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline-a">Visalian feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="opener" diff_index="0" index="one" class="layout one i w_paragraph w_text w_separator w_decoration w_headline w_title w_leader w_attribution w_aside w_medium_paragraph w_medium_text w_long_headline w_long_title w_publisher media_gte_narrow media_lt_half media_lt_wide media_lt_full media_landscape crop_true layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_medias w_titles w_texts w_separators layout one i first_layout last_layout opener layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="feed" diff_index="0" index="one" class="layout one i w_cover w_media w_leader w_decoration w_trailer w_connector media_lt_narrow media_lt_half media_lt_wide media_lt_full media_landscape crop_true w_headline w_title w_separator w_icon w_attribution w_aside w_medium_headline w_medium_title w_publisher media_gte_narrow media_gte_half media_gte_wide w_long_headline w_long_title media_gte_full w_short_headline w_short_title w_author media_portrait layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="two" diff_index="1" index="two" class="colors-use-local w_medias w_titles layout two i first_layout feed layout two" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-3-l-two"></div><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_medias w_titles layout one i feed layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-3-l-one"></div><div kind="layout" style="position: relative" sequence="two" diff_index="1" index="two" class="colors-use-local w_medias w_titles layout two i last_layout feed layout two" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-3-l-two-2"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-4"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-4-l-one"></div><style id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-color">body{background-color: rgba(0, 0, 0, 1)}</style></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="opener" diff_index="0" index="one" class="layout one i w_paragraph w_text w_separator w_decoration w_headline w_title w_leader w_attribution w_aside w_medium_paragraph w_medium_text w_long_headline w_long_title w_publisher media_gte_narrow media_lt_half media_lt_wide media_lt_full media_landscape crop_true layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_medias w_titles w_texts w_separators layout one i first_layout last_layout opener layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="feed" diff_index="0" index="one" class="layout one i w_cover w_media w_leader w_decoration w_trailer w_connector media_lt_narrow media_lt_half media_lt_wide media_lt_full media_landscape crop_true w_headline w_title w_separator w_icon w_attribution w_aside w_medium_headline w_medium_title w_publisher media_gte_narrow media_gte_half media_gte_wide w_long_headline w_long_title media_gte_full w_short_headline w_short_title w_author media_portrait layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="two" diff_index="1" index="two" class="colors-use-local w_medias w_titles layout two i first_layout feed layout two" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-3-l-two"></div><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_medias w_titles layout one i feed layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-3-l-one"></div><div kind="layout" style="position: relative" sequence="two" diff_index="1" index="two" class="colors-use-local w_medias w_titles layout two i last_layout feed layout two" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-3-l-two-2"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-4"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-4-l-one"></div><style id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-color">body{background-color: rgba(0, 0, 0, 1)}</style></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+</div><h1 kind="title" index="headline" class="long long_headline long_title title headline vfld-leader title headline" specificity="0.25" itemprop="title" id="u-47626f81-4d4f-4c84-94f5-ea460c6b447f-g-textual-t-headline"><a class="text-decoration" href="http://nextmarket.co/blogs/smarthomeweekly/101249799-hedge-vs-wedge-alexa-ces-and-the-difference-between-amazon-and-apple-smart-home-strategies" id="u-47626f81-4d4f-4c84-94f5-ea460c6b447f-g-textual-t-headline-a">Hedge Vs.<wbr class="w480 w960"></wbr> Wedge: <wbr class="w481 w961 w1799"></wbr>Alexa, <wbr class="w480 w960"></wbr>CES<wbr class="w1800"></wbr> and The <wbr class="w480 w481 w960 w961 w1799"></wbr>Difference <wbr class="w480 w960"></wbr>Between<wbr class="w481 w961 w1799"></wbr> <wbr class="w480 w960 w1800"></wbr>Amazon and <wbr class="w480 w960"></wbr>Apple <wbr class="w481 w961 w1799"></wbr>Smart<wbr class="w1800"></wbr> <wbr class="w480 w960"></wbr>Home<wbr class="w480 w960"></wbr> Strategies</a></h1><div kind="aside" index="attribution" class="aside attribution aside attribution" id="u-47626f81-4d4f-4c84-94f5-ea460c6b447f-g-textual-a-attribution"><a kind="aside" index="publisher" class="text-decoration aside publisher aside publisher" href="http://nextmarket.co/blogs/smarthomeweekly/101249799-hedge-vs-wedge-alexa-ces-and-the-difference-between-amazon-and-apple-smart-home-strategies" itemprop="publisher" id="u-47626f81-4d4f-4c84-94f5-ea460c6b447f-g-textual-a-attribution-a-publisher">NextMarket</a></div></div><a kind="media" index="cover" itemprop="cover" class="media cover media cover" max-width="591" max-height="447" href="http://nextmarket.co/blogs/smarthomeweekly/101249799-hedge-vs-wedge-alexa-ces-and-the-difference-between-amazon-and-apple-smart-home-strategies" id="u-47626f81-4d4f-4c84-94f5-ea460c6b447f-m-cover"><picture id="u-47626f81-4d4f-4c84-94f5-ea460c6b447f-m-cover-img" class=""><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591 2x" media="(min-width: 1441px) and (min-width: 1441px) and (max-width: 1799px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591 2x" media="(min-width: 1441px) and (min-width: 1800px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591 2x" media="(min-width: 721px) and (min-width: 721px) and (max-width: 960px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591 2x" media="(min-width: 721px) and (min-width: 961px) and (max-width: 1440px)" /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591 2x" media="(min-width: 1px) and (max-width: 480px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c9bc911a8c2bdc05028ad86d6300740/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=447&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fe25453e61344346396138fbf86c6499a609a0d79.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=591 2x" media="(min-width: 1px) and (min-width: 481px) and (max-width: 720px)" /><!--[if IE 9]></video><![endif]--><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="  /></picture></a></article><article subject="stack" class="col-1 export-linebreaks uninverted vertical line_padding_aside_inside text_width_wider not_decorated group_h_align_none text_align_left flow_unreversed group_v_outset_none group_v_inset_small group_h_outset_none group_h_inset_small flow_vertical font_size_large color_adjust_none color_styles_high_text_emphasis_no_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_xsmall stack_h_outset_none stack_h_inset_xsmall stack_h_align_center collapsed full aspect_natural stack graphical_heading ii first_stack graphical heading w_cover w_media w_decoration media_lt_narrow media_lt_half media_lt_wide media_lt_full media_landscape crop_true w_headline w_title w_attribution w_aside w_medium_headline w_medium_title w_publisher stack graphical_heading" itemid="935ae8f0-4204-481a-aaea-a1923347f58a" itemtype="article" diff_index="9" index="graphical_heading" kind="stack" score="5.875" missed="0.125" tag="article" id="u-935ae8f0-4204-481a-aaea-a1923347f58a"><div kind="group" index="graphical" class="group graphical group graphical" id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-graphical"><a kind="media" index="cover" class="vfld media cover vfld-leader vfld-trailer media cover" specificity="0.25" itemprop="cover" max-width="287" max-height="210" href="http://www.eetimes.com/document.asp?doc_id=1328537" id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-graphical-m-cover"><picture id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-graphical-m-cover-img" class=""><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287 2x" media="(min-width: 1441px) and (min-width: 1441px) and (max-width: 1799px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287 2x" media="(min-width: 1441px) and (min-width: 1800px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8aebc4ceea3d309507e36f492f0b15bb/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=183&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=250, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287 2x" media="(min-width: 721px) and (min-width: 721px) and (max-width: 960px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287 2x" media="(min-width: 721px) and (min-width: 961px) and (max-width: 1440px)" /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287 2x" media="(min-width: 1px) and (max-width: 480px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/85fc14157fb5bb8268d8ad09ebacf400/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=210&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fc3761f41783ae484f42286231bc6750866511db1.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=287 2x" media="(min-width: 1px) and (min-width: 481px) and (max-width: 720px)" /><!--[if IE 9]></video><![endif]--><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="  /></picture></a></div><div kind="group" index="heading" class="group heading group heading" id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-heading"><h1 kind="title" index="headline" class="medium medium_headline medium_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-heading-t-headline"><a class="text-decoration" href="http://www.eetimes.com/document.asp?doc_id=1328537" id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-heading-t-headline-a">ZigBee <wbr class="w960"></wbr>3.0 to <wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Include <wbr class="w480 w960"></wbr>Energy <wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Harvesting <wbr class="w960"></wbr>| <wbr class="w480"></wbr>EE <wbr class="w481 w961 w1799 w1800"></wbr>Times</a></h1><div kind="aside" index="attribution" class="aside attribution aside attribution" id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-heading-a-attribution"><a kind="aside" index="publisher" class="text-decoration aside publisher aside publisher" href="http://www.eetimes.com/document.asp?doc_id=1328537" itemprop="publisher" id="u-935ae8f0-4204-481a-aaea-a1923347f58a-g-heading-a-attribution-a-publisher">EETimes</a></div></div></article><article subject="stack" class="col-1 export-linebreaks uninverted vertical line_padding_aside_inside text_width_wider not_decorated group_h_align_none text_align_left flow_unreversed group_v_outset_none group_v_inset_small group_h_outset_none group_h_inset_small flow_vertical font_size_large color_adjust_none color_styles_high_text_emphasis_no_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_xsmall stack_h_outset_none stack_h_inset_xsmall stack_h_align_center collapsed full aspect_natural stack graphical_heading ii graphical heading w_cover w_media w_decoration media_gte_narrow media_gte_half media_gte_wide media_lt_full media_landscape crop_true w_headline w_title w_attribution w_aside w_long_headline w_long_title w_publisher stack graphical_heading" itemid="fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc" itemtype="article" diff_index="9" index="graphical_heading" kind="stack" score="5.875" missed="0.125" tag="article" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc"><div kind="group" index="graphical" class="group graphical group graphical" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-graphical"><a kind="media" index="cover" class="vfld media cover vfld-leader vfld-trailer media cover" specificity="0.25" itemprop="cover" max-width="1000" max-height="367" href="https://boingboing.net/2016/01/09/now-that-they-know-the-nsa-is.html" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-graphical-m-cover"><picture id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-graphical-m-cover-img" class=""><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/73ca30746e43ef48e24989b1f7e201c4/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=342&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=931, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8b23515522ed54a994b5c994e9eb5602/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=367&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1000 2x" media="(min-width: 1441px) and (min-width: 1441px) and (max-width: 1799px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/19cc0fc65f334091f28af46889acb3b9/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=342&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=932, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8b23515522ed54a994b5c994e9eb5602/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=367&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1000 2x" media="(min-width: 1441px) and (min-width: 1800px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/c9b816cee2095956e22caaaa0e07d03a/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=183&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=497, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/66cbf9da5fb9427d41767b6346c7260e/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=366&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=994 2x" media="(min-width: 721px) and (min-width: 721px) and (max-width: 960px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/9bc8e21c658dac3ac50665cc1cebe021/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=274&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=745, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8b23515522ed54a994b5c994e9eb5602/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=367&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1000 2x" media="(min-width: 721px) and (min-width: 961px) and (max-width: 1440px)" /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d46b4ef80b4d35158334b2bd90096515/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=150&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=409, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5c99e548d4eef09d5480fa84d7fde389/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=300&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=818 2x" media="(min-width: 1px) and (max-width: 480px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d0c0c1fc5b89ef22d95a8a1a0d4f4c50/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=225&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=613, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8b23515522ed54a994b5c994e9eb5602/gradientmap.jpg?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=367&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F133d33b6b8c1081befc6e9940993e7aad9c7fc38.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1000 2x" media="(min-width: 1px) and (min-width: 481px) and (max-width: 720px)" /><!--[if IE 9]></video><![endif]--><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="  /></picture></a></div><div kind="group" index="heading" class="group heading group heading" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-heading"><h1 kind="title" index="headline" class="long long_headline long_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-heading-t-headline"><a class="text-decoration" href="https://boingboing.net/2016/01/09/now-that-they-know-the-nsa-is.html" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-heading-t-headline-a">Now that they <wbr class="w480 w960"></wbr>know <wbr class="w481"></wbr>the <wbr class="w961 w1799"></wbr>NSA <wbr class="w480"></wbr>is <wbr class="w960 w1800"></wbr>spying on <wbr class="w480 w481"></wbr>them, <wbr class="w480 w960 w961 w1799"></wbr>Congress is <wbr class="w480 w481"></wbr>really <wbr class="w960 w1800"></wbr>worried <wbr class="w480 w961 w1799"></wbr>about <wbr class="w480 w481 w960"></wbr>domestic <wbr class="w480 w960 w961 w1799 w1800"></wbr>surveillance</a></h1><div kind="aside" index="attribution" class="aside attribution aside attribution" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-heading-a-attribution"><a kind="aside" index="publisher" class="text-decoration aside publisher aside publisher" href="https://boingboing.net/2016/01/09/now-that-they-know-the-nsa-is.html" itemprop="publisher" id="u-fb8ae0d0-72e1-408b-8c85-59d0ff5ba3dc-g-heading-a-attribution-a-publisher">Boing Boing</a></div></div></article><article subject="stack" class="col-1 export-linebreaks uninverted vertical line_padding_aside_inside text_width_wider not_decorated group_h_align_none text_align_left flow_unreversed group_v_outset_none group_v_inset_small group_h_outset_none group_h_inset_small flow_vertical font_size_large color_adjust_none color_styles_high_text_emphasis_no_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_xsmall stack_h_outset_none stack_h_inset_xsmall stack_h_align_center collapsed full aspect_natural stack graphical_heading ii graphical heading w_cover w_media w_decoration media_gte_narrow media_gte_half media_gte_wide media_gte_full media_landscape crop_true w_headline w_title w_attribution w_aside w_short_headline w_short_title w_author w_publisher stack graphical_heading" itemid="1c9c5ae7-481c-459e-8bef-eeb0605e53eb" itemtype="article" diff_index="9" index="graphical_heading" kind="stack" score="5.875" missed="0.125" tag="article" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb"><div kind="group" index="graphical" class="group graphical group graphical" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-graphical"><a kind="media" index="cover" class="vfld media cover vfld-leader vfld-trailer media cover" specificity="0.25" itemprop="cover" max-width="1971" max-height="1178" href="http://businessoverbroadway.com/top-10-skills-in-data-science" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-graphical-m-cover"><picture id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-graphical-m-cover-img" class=""><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/0c828309a40d6207851e294951eef55e/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=377&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=630, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/c1683a4d0c01dcc3a1e99ef1a7f492c5/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=754&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1260 2x" media="(min-width: 1441px) and (min-width: 1441px) and (max-width: 1799px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/0c828309a40d6207851e294951eef55e/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=377&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=630, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/c1683a4d0c01dcc3a1e99ef1a7f492c5/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=754&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1260 2x" media="(min-width: 1441px) and (min-width: 1800px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/77d9cf6744b6857f0b3551cc3a0bda8a/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=201&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=336, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/fb154a1889d91a1596cd02231b1f93e3/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=402&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=672 2x" media="(min-width: 721px) and (min-width: 721px) and (max-width: 960px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/f547dac9bef785a35ac3f0d0791975e8/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=302&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=504, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/1d9d27dd7d4842efb1c4000747fa404b/gradientmap.png?color1=%23141C1F&color2=%2329383D&color3=%2352707A&color4=%238FC2D6&color5=%23DAEBF1&height=604&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1008 2x" media="(min-width: 721px) and (min-width: 961px) and (max-width: 1440px)" /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/4e95b2f0b5cb7156184777eda401c536/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=244&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=408, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/ab3266109ddec5ea359934e342bdd5ef/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=488&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=816 2x" media="(min-width: 1px) and (max-width: 480px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d6aaef9cccda187c64000e9fff6dad77/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=366&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=612, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/166befcb7d2dc6655b10730b26dec0ae/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=732&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb2dbfe50c1703b3a78517c5dc3685c900546fd2f.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1224 2x" media="(min-width: 1px) and (min-width: 481px) and (max-width: 720px)" /><!--[if IE 9]></video><![endif]--><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="  /></picture></a></div><div kind="group" index="heading" class="group heading group heading" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-heading-t-headline"><a class="text-decoration" href="http://businessoverbroadway.com/top-10-skills-in-data-science" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-heading-t-headline-a">Top 10 <wbr class="w960"></wbr>Skills <wbr class="w480 w961 w1799"></wbr>in <wbr class="w960 w1800"></wbr>Data <wbr class="w480 w481 w960 w961 w1799"></wbr>Science</a></h1><div kind="aside" index="attribution" class="aside attribution aside attribution" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-heading-a-attribution"><a kind="aside" index="author" class="text-decoration aside author aside author" href="http://businessoverbroadway.com/author/bobhayes" itemprop="author" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-heading-a-attribution-a-author">Bob Hayes</a><a kind="aside" index="publisher" class="text-decoration aside publisher aside publisher" href="http://businessoverbroadway.com/top-10-skills-in-data-science" itemprop="publisher" id="u-1c9c5ae7-481c-459e-8bef-eeb0605e53eb-g-heading-a-attribution-a-publisher">@bobehayes</a></div></div></article><article subject="stack" class="col-1 export-linebreaks uninverted vertical line_padding_aside_inside text_width_wider not_decorated group_h_align_none text_align_left flow_unreversed group_v_outset_none group_v_inset_small group_h_outset_none group_h_inset_small flow_vertical font_size_large color_adjust_none color_styles_high_text_emphasis_no_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_xsmall stack_h_outset_none stack_h_inset_xsmall stack_h_align_center collapsed full aspect_natural stack graphical_heading ii graphical heading w_cover w_media w_decoration media_gte_narrow media_lt_half media_lt_wide media_lt_full media_portrait crop_true w_headline w_title w_attribution w_aside w_long_headline w_long_title w_publisher stack graphical_heading" itemid="1982101e-4805-4db6-a7ad-a72366ce7c4b" itemtype="article" diff_index="9" index="graphical_heading" kind="stack" score="5.875" missed="0.125" tag="article" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b"><div kind="group" index="graphical" class="group graphical group graphical" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-graphical"><a kind="media" index="cover" class="vfld media cover vfld-leader vfld-trailer media cover" specificity="0.25" itemprop="cover" max-width="511" max-height="512" href="https://blog.ethereum.org/2015/11/24/applications-of-security-deposits-and-prediction-markets-you-might-not-have-thought-about/" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-graphical-m-cover"><picture id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-graphical-m-cover-img" class=""><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/f50b225693faab993ec5d4552b9b8000/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=451&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=450, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8247177bae8577b97ad8ce0582c3663c/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=512&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=511 2x" media="(min-width: 1441px) and (min-width: 1441px) and (max-width: 1799px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/f50b225693faab993ec5d4552b9b8000/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=451&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=450, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8247177bae8577b97ad8ce0582c3663c/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=512&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=511 2x" media="(min-width: 1441px) and (min-width: 1800px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/7aabc1a1ca777645f464200f7e356cdf/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=241&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=241, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/4b07619831f0c2b9ee4781417b86a34b/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=482&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=482 2x" media="(min-width: 721px) and (min-width: 721px) and (max-width: 960px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d268c8a6dd55153bfe202f2fb818cd47/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=361&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=361, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8247177bae8577b97ad8ce0582c3663c/gradientmap.jpg?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=512&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=511 2x" media="(min-width: 721px) and (min-width: 961px) and (max-width: 1440px)" /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5b96c52638c1e0db5dcacface35ef977/gradientmap.jpg?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=409&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=409, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/4a117cb65fb35d07f5e0c0b85379a08c/gradientmap.jpg?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=512&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=511 2x" media="(min-width: 1px) and (max-width: 480px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/4a117cb65fb35d07f5e0c0b85379a08c/gradientmap.jpg?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=512&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=511, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/4a117cb65fb35d07f5e0c0b85379a08c/gradientmap.jpg?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=512&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2F243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=511 2x" media="(min-width: 1px) and (min-width: 481px) and (max-width: 720px)" /><!--[if IE 9]></video><![endif]--><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="  /></picture></a></div><div kind="group" index="heading" class="group heading group heading" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-heading"><h1 kind="title" index="headline" class="long long_headline long_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-heading-t-headline"><a class="text-decoration" href="https://blog.ethereum.org/2015/11/24/applications-of-security-deposits-and-prediction-markets-you-might-not-have-thought-about/" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-heading-t-headline-a">Applications <wbr class="w480 w960"></wbr>of <wbr class="w481 w961 w1799 w1800"></wbr>Security <wbr class="w480 w960 w961 w1799"></wbr>Deposits <wbr class="w481 w960 w1800"></wbr>and <wbr class="w480 w960 w961 w1799"></wbr>Prediction <wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Markets <wbr class="w960"></wbr>You <wbr class="w480 w961 w1799"></wbr>Might <wbr class="w481 w960 w1800"></wbr>Not <wbr class="w480"></wbr>Have <wbr class="w960 w961 w1799"></wbr>Thought <wbr class="w480 w481 w960 w1800"></wbr>About <wbr class="w961 w1799"></wbr>- <wbr class="w480 w960"></wbr>Ethereum <wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Blog</a></h1><div kind="aside" index="attribution" class="aside attribution aside attribution" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-heading-a-attribution"><a kind="aside" index="publisher" class="text-decoration aside publisher aside publisher" href="https://blog.ethereum.org/2015/11/24/applications-of-security-deposits-and-prediction-markets-you-might-not-have-thought-about/" itemprop="publisher" id="u-1982101e-4805-4db6-a7ad-a72366ce7c4b-g-heading-a-attribution-a-publisher">Ethereum Blog</a></div></div></article><article subject="stack" class="col-1 export-linebreaks uninverted vertical line_padding_aside_inside text_width_wider not_decorated group_h_align_none text_align_left flow_unreversed group_v_outset_none group_v_inset_small group_h_outset_none group_h_inset_small flow_vertical font_size_large color_adjust_none color_styles_high_text_emphasis_no_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_xsmall stack_h_outset_none stack_h_inset_xsmall stack_h_align_center collapsed full aspect_natural stack graphical_heading ii last_stack graphical heading w_cover w_media w_decoration media_gte_narrow media_gte_half media_gte_wide media_lt_full media_landscape crop_true w_headline w_title w_attribution w_aside w_long_headline w_long_title w_publisher stack graphical_heading" itemid="7c0e390b-14cd-4709-985d-8fdb66ca2b53" itemtype="article" diff_index="9" index="graphical_heading" kind="stack" score="5.875" missed="0.125" tag="article" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53"><div kind="group" index="graphical" class="group graphical group graphical" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-graphical"><a kind="media" index="cover" class="vfld media cover vfld-leader vfld-trailer media cover" specificity="0.25" itemprop="cover" max-width="1200" max-height="630" href="https://www.eff.org/deeplinks/2016/01/china-shows-how-backdoors-lead-software-censorship" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-graphical-m-cover"><picture id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-graphical-m-cover-img" class=""><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/a54dc67b0aa63100b04313f418767946/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=450&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb29986ee8fdc2fc72caad90f1089f614f61f065d.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=857, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/ad5b19a4172f533d5581f239fdbb9b65/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=630&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb29986ee8fdc2fc72caad90f1089f614f61f065d.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1200 2x" media="(min-width: 1441px) and (min-width: 1441px) and (max-width: 1799px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/1bd6f2284b1248af5ee6cf9014b9f090/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=451&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb29986ee8fdc2fc72caad90f1089f614f61f065d.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=857, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/ad5b19a4172f533d5581f239fdbb9b65/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=630&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb29986ee8fdc2fc72caad90f1089f614f61f065d.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1200 2x" media="(min-width: 1441px) and (min-width: 1800px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/6608d30ce5e84c2a23ac1757d66be99b/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=241&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb29986ee8fdc2fc72caad90f1089f614f61f065d.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=457, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/493eb5b4eed272191ecf1633a12fd1da/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=482&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb29986ee8fdc2fc72caad90f1089f614f61f065d.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=914 2x" media="(min-width: 721px) and (min-width: 721px) and (max-width: 960px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/0dc530ac3444f0d58026df2ae4efd8a2/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=361&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb29986ee8fdc2fc72caad90f1089f614f61f065d.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=686, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/ad5b19a4172f533d5581f239fdbb9b65/gradientmap.png?color1=%23141B1F&color2=%2329363D&color3=%23526D7A&color4=%238FC2D6&color5=%23DAEBF1&height=630&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb29986ee8fdc2fc72caad90f1089f614f61f065d.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1200 2x" media="(min-width: 721px) and (min-width: 961px) and (max-width: 1440px)" /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/0957c2ab6086b5d30c42b00a11d80dfc/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=215&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb29986ee8fdc2fc72caad90f1089f614f61f065d.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=409, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/7d8bfe3e5514048d7e9b318afe888f8e/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=430&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb29986ee8fdc2fc72caad90f1089f614f61f065d.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=818 2x" media="(min-width: 1px) and (max-width: 480px) " /><source srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/59492f2ee8aecc60da1d1ad8bdab2170/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=322&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb29986ee8fdc2fc72caad90f1089f614f61f065d.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=613, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/14c2010acb7945b46db41d8fa34aa3c5/gradientmap.png?color1=%231A1A1A&color2=%23333333&color3=%23666666&color4=%238FC2D6&color5=%23DAEBF1&height=630&input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-grid-img%2Fp%2Fb29986ee8fdc2fc72caad90f1089f614f61f065d.png&srgb=True&stop1=0.1&stop2=0.3&stop3=0.5&stop4=0.7&stop5=0.9&width=1200 2x" media="(min-width: 1px) and (min-width: 481px) and (max-width: 720px)" /><!--[if IE 9]></video><![endif]--><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="  /></picture></a></div><div kind="group" index="heading" class="group heading group heading" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-heading"><h1 kind="title" index="headline" class="long long_headline long_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-heading-t-headline"><a class="text-decoration" href="https://www.eff.org/deeplinks/2016/01/china-shows-how-backdoors-lead-software-censorship" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-heading-t-headline-a">Your <wbr class="w960"></wbr>Apps, <wbr class="w480 w960 w961 w1799"></wbr>Please? <wbr class="w481 w960 w1800"></wbr>China <wbr class="w480 w960 w961 w1799"></wbr>Shows <wbr class="w960"></wbr>how <wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Surveillance <wbr class="w480 w960 w961 w1799"></wbr>Leads to <wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Intimidation <wbr class="w480 w960"></wbr>and <wbr class="w481 w960 w961 w1799 w1800"></wbr>Software <wbr class="w480 w960 w961 w1799"></wbr>Censorship</a></h1><div kind="aside" index="attribution" class="aside attribution aside attribution" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-heading-a-attribution"><a kind="aside" index="publisher" class="text-decoration aside publisher aside publisher" href="https://www.eff.org/deeplinks/2016/01/china-shows-how-backdoors-lead-software-censorship" itemprop="publisher" id="u-7c0e390b-14cd-4709-985d-8fdb66ca2b53-g-heading-a-attribution-a-publisher">Electronic Frontier <wbr class="w960"></wbr>Foundation</a></div></div></article><article subject="panel" class="col-1 export-linebreaks not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center uninverted vertical collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_headline w_title w_decoration w_short_headline w_short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline"><a class="text-decoration" href="rss.xml" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-alternate-g-heading-t-headline-a">Visalian feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="opener" diff_index="0" index="one" class="layout one i w_paragraph w_text w_separator w_decoration w_headline w_title w_leader w_attribution w_aside w_medium_paragraph w_medium_text w_long_headline w_long_title w_publisher media_gte_narrow media_lt_half media_lt_wide media_lt_full media_landscape crop_true layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_medias w_titles w_texts w_separators layout one i first_layout last_layout opener layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="feed" diff_index="0" index="one" class="layout one i w_cover w_media w_leader w_decoration w_trailer w_connector media_lt_narrow media_lt_half media_lt_wide media_lt_full media_landscape crop_true w_headline w_title w_separator w_icon w_attribution w_aside w_medium_headline w_medium_title w_publisher media_gte_narrow media_gte_half media_gte_wide w_long_headline w_long_title media_gte_full w_short_headline w_short_title w_author media_portrait layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="two" diff_index="1" index="two" class="colors-use-local w_medias w_titles layout two i first_layout feed layout two" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-3-l-two"></div><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_medias w_titles layout one i feed layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-3-l-one"></div><div kind="layout" style="position: relative" sequence="two" diff_index="1" index="two" class="colors-use-local w_medias w_titles layout two i last_layout feed layout two" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-3-l-two-2"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-4"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-desktop-l-one-4-l-one"></div><style id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-color">body{background-color: rgba(0, 0, 0, 1)}</style></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="opener" diff_index="0" index="one" class="layout one i w_paragraph w_text w_separator w_decoration w_headline w_title w_leader w_attribution w_aside w_medium_paragraph w_medium_text w_long_headline w_long_title w_publisher media_gte_narrow media_lt_half media_lt_wide media_lt_full media_landscape crop_true layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_medias w_titles w_texts w_separators layout one i first_layout last_layout opener layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="feed" diff_index="0" index="one" class="layout one i w_cover w_media w_leader w_decoration w_trailer w_connector media_lt_narrow media_lt_half media_lt_wide media_lt_full media_landscape crop_true w_headline w_title w_separator w_icon w_attribution w_aside w_medium_headline w_medium_title w_publisher media_gte_narrow media_gte_half media_gte_wide w_long_headline w_long_title media_gte_full w_short_headline w_short_title w_author media_portrait layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="two" diff_index="1" index="two" class="colors-use-local w_medias w_titles layout two i first_layout feed layout two" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-3-l-two"></div><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_medias w_titles layout one i feed layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-3-l-one"></div><div kind="layout" style="position: relative" sequence="two" diff_index="1" index="two" class="colors-use-local w_medias w_titles layout two i last_layout feed layout two" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-3-l-two-2"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-4"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-cinema-l-one-4-l-one"></div><style id="u-a1beb345-0614-4ddb-8536-bc95e2e9f8ed-color">body{background-color: rgba(0, 0, 0, 1)}</style></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /*! Hammer.JS - v1.1.3 - 2014-05-20
  * http://eightmedia.github.io/hammer.js
  *
@@ -2240,7 +2256,7 @@ module.exports = function() {
 
 
 },{}],5:[function(require,module,exports){
-var cache, fade, frames, hiding, highlighting, showing;
+var Hide, Show, cache, fade, frames, hiding, highlighting, showing;
 
 highlighting = showing = hiding = null;
 
@@ -2267,40 +2283,69 @@ fade = function(element, to, from) {
   return frames[element.id] = requestAnimationFrame(Frame);
 };
 
+document.body.addEventListener('mousemove', function(e) {});
+
+Hide = function(target) {
+  clearTimeout(showing);
+  setTimeout(function() {
+    if (hiding !== target) {
+      hiding.style.backgroundImage = cache[hiding.id];
+      return delete cache[hiding.id];
+    }
+  }, 300);
+  hiding = highlighting;
+  highlighting = null;
+  return fade(hiding.getElementsByTagName('img')[0], 1);
+};
+
+Show = function(target, x, y, img) {
+  var colors, value;
+  if (target !== highlighting) {
+    clearTimeout(showing);
+    showing = setTimeout(function() {
+      if (highlighting === target) {
+        return fade(img, 0.8);
+      }
+    }, 150);
+  }
+  if ((value = cache[target.id]) == null) {
+    cache[target.id] = value = window.getComputedStyle(target)['background-image'];
+  }
+  if (value.indexOf('linear-gradient') > -1) {
+    colors = value.match(/rgba?\((.*?)\)|black|white|transparent/g);
+    if (colors[1].indexOf('rgba') > -1) {
+      colors[1] = colors[1].replace(/,\s*[\d\.]+\)/, ', 0.7)');
+    } else {
+      colors[1] = colors[1].replace('rgb', 'rgba').replace(/\)/, ', 0.7)');
+    }
+    value = 'radial-gradient(circle at ' + x + 'px ' + y + 'px, rgba(255,255,255,0.5) -10%, ' + colors[1] + ' 25%, ' + colors[0] + ' 90%)';
+  } else {
+    return;
+  }
+  target.style.backgroundImage = value;
+  return highlighting = target;
+};
+
+document.body.addEventListener('click', function(e) {
+  if (highlighting) {
+    return Hide(highlighting);
+  }
+});
+
 document.body.addEventListener('mousemove', function(e) {
-  var clientX, clientY, colors, img, parent, ref, target, value;
+  var clientX, clientY, img, parent, ref, target;
   target = e.target;
   while (target) {
-    if (target.tagName === 'A' && target.classList.contains('media')) {
+    if (target.tagName === 'A' && target.classList.contains('media') && !target.classList.contains('revealed')) {
       break;
     }
     target = target.parentNode;
   }
   if (highlighting && highlighting !== target) {
-    clearTimeout(showing);
-    setTimeout(function() {
-      if (hiding !== target) {
-        hiding.style.backgroundImage = cache[hiding.id];
-        return delete cache[hiding.id];
-      }
-    }, 300);
-    hiding = highlighting;
-    highlighting = null;
-    fade(hiding.getElementsByTagName('img')[0], 1);
+    Hide(highlighting);
   }
   if (target) {
     if ((ref = (img = target.getElementsByTagName('img')[0])) != null ? ref.complete : void 0) {
-      if (target !== highlighting) {
-        clearTimeout(showing);
-        showing = setTimeout(function() {
-          if (highlighting === target) {
-            return fade(img, 0.8);
-          }
-        }, 150);
-      }
-      if ((value = cache[target.id]) == null) {
-        cache[target.id] = value = window.getComputedStyle(target)['background-image'];
-      }
       clientX = e.pageX;
       clientY = e.pageY;
       parent = target;
@@ -2309,19 +2354,7 @@ document.body.addEventListener('mousemove', function(e) {
         clientY -= parent.offsetTop;
         parent = parent.offsetParent;
       }
-      if (value.indexOf('linear-gradient') > -1) {
-        colors = value.match(/rgba?\((.*?)\)|black|white|transparent/g);
-        if (colors[1].indexOf('rgba') > -1) {
-          colors[1] = colors[1].replace(/,\s*[\d\.]+\)/, ', 0.7)');
-        } else {
-          colors[1] = colors[1].replace('rgb', 'rgba').replace(/\)/, ', 0.7)');
-        }
-        value = 'radial-gradient(circle at ' + clientX + 'px ' + clientY + 'px, rgba(255,255,255,0.5) -10%, ' + colors[1] + ' 25%, ' + colors[0] + ' 90%)';
-      } else {
-        return;
-      }
-      target.style.backgroundImage = value;
-      return highlighting = target;
+      return Show(target, clientX, clientY, img);
     }
   }
 });
@@ -2469,11 +2502,13 @@ module.exports = function() {
 
 
 },{"./reflow":9}],8:[function(require,module,exports){
-var Player, Youtube, iframe, revealed, rgb2hex;
+var Player, Youtube, iframe, reflow, revealed, rgb2hex;
 
 iframe = null;
 
 Youtube = null;
+
+reflow = require('./reflow');
 
 Player = function(id, src, width, height, color, bg) {
   if (src.indexOf('youtube') > -1) {
@@ -2482,6 +2517,8 @@ Player = function(id, src, width, height, color, bg) {
   src = src.replace('COLOR', color).replace('BG', bg);
   if (location.protocol !== 'https:') {
     src = src.replace('https:', 'http:');
+  } else {
+    src = src.replace('http:', 'https:');
   }
   iframe = document.createElement('iframe');
   iframe.id = id;
@@ -2494,79 +2531,294 @@ Player = function(id, src, width, height, color, bg) {
   iframe.style.left = 0;
   iframe.style.right = 0;
   iframe.style.position = 'absolute';
-  iframe.style.opacity = 0.2;
+  iframe.style.opacity = 0;
   iframe.onload = function() {
-    return iframe.style.opacity = 1;
+    return iframe.showing = setTimeout(function() {
+      iframe.classList.add('loaded');
+      iframe.style.display = '';
+      iframe.showing = setTimeout(function() {
+        iframe.style.opacity = 1;
+        return iframe.showing = setTimeout(function() {
+          return typeof iframe.onloaded === "function" ? iframe.onloaded(true) : void 0;
+        }, 500);
+      }, 1);
+      return typeof iframe.onloaded === "function" ? iframe.onloaded() : void 0;
+    }, 300);
   };
   return iframe;
 };
 
 revealed = null;
 
-Player.reveal = function(iframe) {
-  var diff, i, left, len, parent, play, ref, ref1, sibling, target, top, translateX, translateY;
-  while (target = (target || iframe).parentNode) {
-    if ((ref = target.classList) != null ? ref.contains('media') : void 0) {
-      if (target.parentNode.classList.contains('group')) {
-        parent = target.parentNode;
-      } else {
-        parent = target;
+Player.findMedia = function(iframe) {
+  var i, len, media, ref, ref1, ref2, sibling;
+  if (iframe.parentNode) {
+    ref = iframe.parentNode.childNodes;
+    for (i = 0, len = ref.length; i < len; i++) {
+      sibling = ref[i];
+      if ((ref1 = sibling.classList) != null ? ref1.contains('media') : void 0) {
+        return sibling;
       }
-      revealed = iframe;
-      play = parent.getElementsByClassName('play')[0];
-      left = target.offsetWidth - play.offsetLeft - play.offsetWidth;
-      top = -play.offsetTop;
-      play.style.webkitTransformOrigin = 'top right';
-      play.style.webkitTransform = 'translateX(' + left + 'px) translateY(' + top + 'px) scale(0.5)';
-      target.classList.add('revealed');
-      ref1 = parent.parentNode.childNodes;
-      for (i = 0, len = ref1.length; i < len; i++) {
-        sibling = ref1[i];
-        if (sibling.nodeType === 1 && sibling !== parent) {
-          translateX = translateY = null;
-          if ((diff = sibling.offsetLeft + sibling.offsetWidth - parent.offsetLeft) > 2 && parent.offsetLeft >= sibling.offsetLeft) {
-            translateX = -diff;
-          }
-          if ((diff = target.offsetLeft + target.offsetWidth - sibling.offsetLeft) > 2 && parent.offsetLeft <= sibling.offsetLeft) {
-            if (!translateX || Math.abs(diff) < Math.abs(translateX)) {
-              translateX = diff;
-            }
-          }
-          if ((diff = sibling.offsetTop + sibling.offsetHeight - parent.offsetTop) > 2 && parent.offsetTop >= sibling.offsetTop) {
-            translateY = -diff;
-          }
-          if ((diff = target.offsetTop + target.offsetHeight - sibling.offsetTop) > 2 && parent.offsetTop <= sibling.offsetTop) {
-            if (!translateY || Math.abs(diff) < Math.abs(translateY)) {
-              translateY = diff;
-            }
-          }
-          if (Math.abs(translateX) > Math.abs(translateY)) {
-            sibling.style.webkitTransform = 'translateY(' + translateY + 'px)';
-          } else {
-            sibling.style.webkitTransform = 'translateX(' + translateX + 'px)';
-          }
-          console.log(translateX, translateY, sibling);
-        }
+    }
+    while (media = (media || iframe).parentNode) {
+      if ((ref2 = media.classList) != null ? ref2.contains('media') : void 0) {
+        return media;
       }
     }
   }
 };
 
+Player.getClipRect = function(img, media) {
+  var rect;
+  rect = {};
+  rect.left = -img.offsetLeft;
+  rect.right = -img.offsetLeft + img.parentNode.offsetWidth;
+  rect.top = -img.offsetTop;
+  rect.bottom = img.offsetTop + img.parentNode.offsetHeight;
+  return rect;
+};
+
+Player.rect = function(rect) {
+  return 'rect(' + rect.top + 'px,' + rect.right + 'px,' + rect.bottom + 'px,' + rect.left + 'px)';
+};
+
+Player.set = function(element, property, value) {
+  var webkit;
+  webkit = 'webkit' + property.charAt(0).toUpperCase() + property.substring(1);
+  if (element.style[webkit] != null) {
+    return element.style[webkit] = value;
+  } else {
+    return element.style[property] = value;
+  }
+};
+
+Player.reveal = function(iframe, instant) {
+  var firstTime, img, layout, left, media, offsetLeft, offsetTop, parent, play, ratio, rectLeft, rectRight, ref, root, shiftLeft, stack, targetHeight, targetWidth, top, translateX, translateY, zoom;
+  iframe.style.maxHeight = window.innerHeight + 'px';
+  if (media = Player.findMedia(iframe)) {
+    if ((ref = media.classList) != null ? ref.contains('media') : void 0) {
+      root = stack = media;
+      while (root = root.parentNode) {
+        if (root.classList.contains('stack')) {
+          stack = root;
+        }
+        if (root.classList.contains('layout-system')) {
+          break;
+        }
+      }
+      layout = reflow.getLayout(root, stack);
+      console.log('get layout', root, stack, layout);
+      img = media.querySelector('picture, img');
+      offsetLeft = media.offsetLeft;
+      offsetTop = media.offsetTop;
+      if (media.parentNode.classList.contains('group')) {
+        parent = media.parentNode;
+        offsetLeft += parent.offsetLeft;
+        offsetTop += parent.offsetTop;
+      } else {
+        parent = media;
+      }
+      revealed = iframe;
+      play = parent.getElementsByClassName('play')[0];
+      Player.set(play, 'transformOrigin', 'top right');
+      if (!media.classList.contains('revealed')) {
+        firstTime = true;
+        media.classList.add('revealed');
+      }
+      if (layout && (layout.offsetWidth > media.offsetWidth * 2.5 || media.offsetWidth < 350 || media.offsetHeight < 200) && iframe.src.indexOf('soundcloud') === -1) {
+        if (firstTime) {
+          Player.set(img, 'transition', 'none');
+          img.style.clip = Player.rect(Player.getClipRect(img));
+          return requestAnimationFrame(function() {
+            Player.set(img, 'transition', '');
+            return requestAnimationFrame(function() {
+              return Player.reveal(iframe);
+            });
+          });
+        }
+        iframe.style.zIndex = 6;
+        media.classList.add('expanded');
+        translateX = -offsetLeft - stack.offsetLeft;
+        translateY = -offsetTop - stack.offsetTop;
+        if (stack.parentNode !== layout) {
+          translateX += layout.offsetLeft + layout.parentNode.offsetLeft;
+          translateY += layout.offsetTop + layout.parentNode.offsetTop;
+        }
+        Player.set(img, 'transform', img.style.transform = 'translateX(' + (translateX - img.offsetLeft) + 'px) ' + 'translateY(' + (translateY - img.offsetTop) + 'px) ');
+        if (img) {
+          Player.set(media, 'transformOrigin', 'top left');
+          Player.set(img, 'transformOrigin', 'top left');
+          ratio = img.offsetWidth / img.offsetHeight;
+          targetHeight = Math.min(layout.offsetHeight, window.innerHeight);
+          targetWidth = ratio * targetHeight;
+          console.log(layout, layout.offsetHeight, targetHeight, 44444);
+          iframe.style.left = translateX + media.offsetLeft + 'px';
+          iframe.style.top = translateY + media.offsetTop + 'px';
+          iframe.style.width = layout.offsetWidth + 'px';
+          iframe.style.height = layout.offsetHeight + 'px';
+          zoom = targetHeight / img.offsetHeight;
+          shiftLeft = (layout.offsetWidth - targetWidth) / 2;
+          rectLeft = rectRight = Math.max(0, -shiftLeft / zoom);
+          if (media.style.overflow !== 'visible') {
+            requestAnimationFrame(function() {
+              media.style.overflow = 'visible';
+              stack.style.overflow = 'visible';
+              img.style.clip = Player.rect(Player.getClipRect(img));
+              return requestAnimationFrame(function() {
+                return img.style.clip = 'rect(0px, ' + (img.offsetWidth - rectRight) + 'px, ' + img.offsetHeight + 'px, ' + rectLeft + 'px)';
+              });
+            });
+          } else {
+            img.style.clip = 'rect(0px, ' + (img.offsetWidth - rectRight) + 'px, ' + img.offsetHeight + 'px, ' + rectLeft + 'px)';
+          }
+          if (img.style.webkitTransform) {
+            img.style.webkitTransform += ' translateX(' + shiftLeft + 'px)  scale(' + zoom.toFixed(3) + ') ';
+          } else if (img.style.transform) {
+            img.style.transform += ' translateX(' + shiftLeft + 'px)  scale(' + zoom.toFixed(3) + ') ';
+          }
+          left = translateX + layout.offsetWidth - play.offsetLeft - play.offsetWidth;
+          top = translateY - play.offsetTop;
+          Player.set(play, 'transform', 'translateX(' + (left - 10) + 'px) ' + 'translateY(' + (top + 10) + 'px) ' + 'scale(0.5)');
+        }
+        stack.style.zIndex = 10;
+        if (iframe.style.opacity === 1) {
+          Player.fade(parent, true, media);
+        } else {
+          iframe.onloaded = function(full) {
+            return Player.fade(parent, full, media);
+          };
+        }
+      } else {
+        media.classList.remove('expanded');
+        left = media.offsetWidth - play.offsetLeft - play.offsetWidth;
+        top = -play.offsetTop;
+        Player.set(play, 'transform', 'translateX(' + (left - 5) + 'px) translateY(' + (top + 5) + 'px) scale(0.5)');
+        iframe.style.left = media.offsetLeft + 'px';
+        iframe.style.top = media.offsetTop + 'px';
+        iframe.style.width = media.offsetWidth + 'px';
+        iframe.style.height = media.offsetHeight + 'px';
+        if (iframe.style.opacity === 1) {
+          img.style.opacity = 0;
+        } else {
+          iframe.onloaded = function(full) {
+            console.error('ONLOADED', full);
+            if (full) {
+              return img.style.opacity = 0;
+            } else {
+              return img.style.opacity = 0.8;
+            }
+          };
+        }
+        Player.expose(parent);
+      }
+    }
+  }
+};
+
+Player.fade = function(parent, full, media) {
+  var i, len, ref, results, sibling;
+  if (media) {
+    sibling = media.querySelector('picture, img');
+    if (full) {
+      sibling.style.opacity = 0;
+    }
+  }
+  ref = parent.parentNode.childNodes;
+  results = [];
+  for (i = 0, len = ref.length; i < len; i++) {
+    sibling = ref[i];
+    if (sibling.nodeType === 1 && sibling !== parent && sibling.tagName !== 'IFRAME' && !sibling.classList.contains('play')) {
+      if (full) {
+        results.push(sibling.style.opacity = 0);
+      } else {
+        results.push(sibling.style.opacity = 0.8);
+      }
+    } else {
+      results.push(void 0);
+    }
+  }
+  return results;
+};
+
+Player.expose = function(parent) {
+  var diff, i, len, ref, results, sibling, translateX, translateY;
+  ref = parent.parentNode.childNodes;
+  results = [];
+  for (i = 0, len = ref.length; i < len; i++) {
+    sibling = ref[i];
+    if (sibling.nodeType === 1 && sibling !== parent && sibling.tagName !== 'IFRAME') {
+      translateX = translateY = null;
+      if ((diff = sibling.offsetLeft + sibling.offsetWidth - parent.offsetLeft) > 2 && parent.offsetLeft >= sibling.offsetLeft) {
+        translateX = -diff - 2;
+      }
+      if ((diff = parent.offsetLeft + parent.offsetWidth - sibling.offsetLeft) > 2 && parent.offsetLeft <= sibling.offsetLeft) {
+        if (!translateX || Math.abs(diff) < Math.abs(translateX)) {
+          translateX = diff + 2;
+        }
+      }
+      if ((diff = sibling.offsetTop + sibling.offsetHeight - parent.offsetTop) > 2 && parent.offsetTop >= sibling.offsetTop) {
+        translateY = -diff - 2;
+      }
+      if ((diff = parent.offsetTop + parent.offsetHeight - sibling.offsetTop) > 2 && parent.offsetTop <= sibling.offsetTop) {
+        if (!translateY || Math.abs(diff) < Math.abs(translateY)) {
+          translateY = diff + 2;
+        }
+      }
+      if (Math.abs(translateX) > Math.abs(translateY)) {
+        results.push(Player.set(sibling, 'transform', 'translateY(' + translateY + 'px)'));
+      } else {
+        results.push(Player.set(sibling, 'transform', 'translateX(' + translateX + 'px)'));
+      }
+    } else {
+      results.push(void 0);
+    }
+  }
+  return results;
+};
+
 Player.hide = function(iframe) {
-  var i, len, parent, play, ref, ref1, sibling;
-  while (parent = (parent || iframe).parentNode) {
-    if ((ref = parent.classList) != null ? ref.contains('revealed') : void 0) {
-      parent.classList.remove('revealed');
+  var child, i, img, j, len, len1, media, parent, play, ref, ref1, ref2, ref3, sibling;
+  if (media = Player.findMedia(iframe)) {
+    if ((ref = media.classList) != null ? ref.contains('revealed') : void 0) {
+      media.classList.remove('revealed');
+      media.classList.remove('expanded');
+      Player.set(media, 'transform', '');
+      if (img = media.querySelector('picture, img')) {
+        img.style.zIndex = '';
+        img.style.opacity = '';
+        if (media.style.overflow === 'visible') {
+          img.style.clip = Player.rect(Player.getClipRect(img));
+          setTimeout(function() {
+            img.style.clip = '';
+            return media.style.overflow = '';
+          }, 300);
+        }
+      }
+      ref1 = media.childNodes;
+      for (i = 0, len = ref1.length; i < len; i++) {
+        child = ref1[i];
+        Player.set(child, 'transform', '');
+      }
+      parent = media;
       if (parent.parentNode.classList.contains('group')) {
         parent = parent.parentNode;
       }
       play = parent.getElementsByClassName('play')[0];
-      play.style.webkitTransform = '';
-      ref1 = parent.parentNode.childNodes;
-      for (i = 0, len = ref1.length; i < len; i++) {
-        sibling = ref1[i];
-        sibling.style.webkitTransform = '';
+      play.style.zIndex = '';
+      Player.set(play, 'transform', '');
+      ref2 = parent.parentNode.childNodes;
+      for (j = 0, len1 = ref2.length; j < len1; j++) {
+        sibling = ref2[j];
+        if (sibling.nodeType === 1 && sibling !== iframe) {
+          Player.set(sibling, 'transform', '');
+          sibling.style.opacity = '';
+        }
       }
+      if (!((ref3 = (parent = parent.parentNode).classList) != null ? ref3.contains('stack') : void 0)) {
+        parent = parent.parentNode;
+      }
+      parent.style.zIndex = '';
+      parent.style.visible = '';
     }
   }
   return revealed = null;
@@ -2590,29 +2842,32 @@ Player.stop = function(iframe) {
   var old;
   old = iframe;
   iframe.style.opacity = 0;
+  iframe.style.width = iframe.offsetWidth + 'px';
+  iframe.style.height = iframe.offsetHeight + 'px';
   setTimeout(function() {
     var ref;
     return (ref = old.parentNode) != null ? ref.removeChild(old) : void 0;
   }, 300);
+  clearTimeout(iframe.showing);
   Player.hide(iframe);
   return iframe = null;
 };
 
 document.addEventListener('click', function(e) {
-  var bg, color, header, parent, play, ref, ref1, results, styles, target;
-  target = e.target;
+  var bg, color, header, media, parent, play, ref, ref1, results, styles;
+  media = e.target;
   results = [];
-  while (target) {
-    if ((ref = target.classList) != null ? ref.contains('media') : void 0) {
-      if (play = target.getElementsByClassName('play')[0]) {
-        if ((iframe != null ? iframe.parentNode : void 0) === target) {
+  while (media) {
+    if ((ref = media.classList) != null ? ref.contains('media') : void 0) {
+      if (play = media.getElementsByClassName('play')[0]) {
+        if ((iframe != null ? iframe.parentNode : void 0) === media || (iframe != null ? iframe.parentNode : void 0) === media.parentNode) {
           Player.stop(iframe);
         } else {
           if (iframe) {
             Player.stop(iframe);
           }
           color = bg = null;
-          header = (ref1 = target.parentNode.parentNode.getElementsByClassName('title')[0]) != null ? ref1.firstChild : void 0;
+          header = (ref1 = media.parentNode.parentNode.getElementsByClassName('title')[0]) != null ? ref1.firstChild : void 0;
           parent = header || play;
           while (parent) {
             if (parent.nodeType === 1) {
@@ -2631,14 +2886,14 @@ document.addEventListener('click', function(e) {
             parent = parent.parentNode;
           }
           iframe = Player(play.id + '-player', play.getAttribute('data-src'), play.getAttribute('data-width'), play.getAttribute('data-height'), rgb2hex(color), rgb2hex(bg));
-          target.appendChild(iframe);
+          media.parentNode.insertBefore(iframe, media);
           Player.reveal(iframe);
         }
         e.preventDefault();
         break;
       }
     }
-    results.push(target = target.parentNode);
+    results.push(media = media.parentNode);
   }
   return results;
 });
@@ -2653,7 +2908,7 @@ rgb2hex = function(rgb) {
 window.exports = window.Player = Player;
 
 
-},{}],9:[function(require,module,exports){
+},{"./reflow":9}],9:[function(require,module,exports){
 module.exports = {
   reflow: function(container) {
     var counter, heights, hidden, hole, holed, holes, i, id, ids, index, j, k, l, last, layout, layouts, len, len1, len2, len3, m, mutations, name, node, ref, ref1, ref2, stack, stacks;
