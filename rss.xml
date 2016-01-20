@@ -4,11 +4,18 @@
         <description><![CDATA[Visalian]]></description>
         <link>http://visalian.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Wed, 13 Jan 2016 06:34:30 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 20 Jan 2016 23:51:47 GMT</lastBuildDate>
         <atom:link href="http://visalian.com/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
+            <title><![CDATA[Brave Software | Building a Better Web]]></title>
+            <description><![CDATA[<article><h1>Brave Software | Building a Better Web</h1><p>By Brendan Eich President and CEO Posted January 20, 2016 The Web is always in trouble for some reason or other. I remember when Microsoft came after Netscape and threatened to lock Web standards into IE. Only the Web is so big, with such reach to billions of users, that no one owns it.</p><img src="https://brave.com/assets/img/sliders/revolution/surfers_bluewash_tan_tall.jpg"></article>]]></description>
+            <link>https://brave.com/</link>
+            <guid isPermaLink="false">1f86af04-0198-4deb-b472-c52d76fc0e39</guid>
+            <pubDate>Wed, 20 Jan 2016 23:51:46 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Hedge Vs. Wedge: Alexa, CES and The Difference Between Amazon and Apple Smart Home Strategies]]></title>
-            <description><![CDATA[<article><h1>Hedge Vs. Wedge: Alexa, CES and The Difference Between Amazon and Apple Smart Home Strategies</h1><p>The early consensus coming out of CES is that Amazon Alexa was the star of the show. Not only did the virtual assistant technology and its physical manifestation in Echo dislodge Nest as the sexy integration partner that everyone clamors to put in their press release and on their consumer packaging, but you could sense a palpable excitement on the show floor about the potential of the voice-powered virtual assistant.</p><img src="http://cdn.shopify.com/s/files/1/0171/3550/files/Screen_Shot_2016-01-11_at_1.12.41_PM_grande.png?3848088232496115254"></article>]]></description>
+            <description><![CDATA[<article><h1>Hedge Vs. Wedge: Alexa, CES and The Difference Between Amazon and Apple Smart Home Strategies</h1><p>The early consensus coming out of CES is that Amazon Alexa was the star of the show. Not only did the virtual assistant technology and its physical manifestation in Echo dislodge Nest as the sexy integration partner that everyone clamors to put in their press release and on their consumer packaging, but you could sense a palpable excitement on the show floor about the potential of the voice-powered virtual assistant.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/e25453e61344346396138fbf86c6499a609a0d79.png"></article>]]></description>
             <link>http://nextmarket.co/blogs/smarthomeweekly/101249799-hedge-vs-wedge-alexa-ces-and-the-difference-between-amazon-and-apple-smart-home-strategies</link>
             <guid isPermaLink="false">47626f81-4d4f-4c84-94f5-ea460c6b447f</guid>
             <pubDate>Wed, 13 Jan 2016 06:34:05 GMT</pubDate>
@@ -43,7 +50,7 @@
         </item>
         <item>
             <title><![CDATA[Your Apps, Please? China Shows how Surveillance Leads to Intimidation and Software Censorship]]></title>
-            <description><![CDATA[<article><h1>Your Apps, Please? China Shows how Surveillance Leads to Intimidation and Software Censorship</h1><p>Xinjiang, home of the China's muslim Uighur minority, has long been the world's laboratory for Internet repression. Faced with widespread local unrest, and online debate, China has done everything it can to enforce its vision of the Net in the region, from imprisoning bloggers and online publishers, to quarantining the entire Xinjiang network from the rest of the Internet for over ten months in 2009.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/595af12b22a553fae9ce85353c556e4a06893d44.png"></article>]]></description>
+            <description><![CDATA[<article><h1>Your Apps, Please? China Shows how Surveillance Leads to Intimidation and Software Censorship</h1><p>Xinjiang, home of the China's muslim Uighur minority, has long been the world's laboratory for Internet repression. Faced with widespread local unrest, and online debate, China has done everything it can to enforce its vision of the Net in the region, from imprisoning bloggers and online publishers, to quarantining the entire Xinjiang network from the rest of the Internet for over ten months in 2009.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/b29986ee8fdc2fc72caad90f1089f614f61f065d.png"></article>]]></description>
             <link>https://www.eff.org/deeplinks/2016/01/china-shows-how-backdoors-lead-software-censorship</link>
             <guid isPermaLink="false">7c0e390b-14cd-4709-985d-8fdb66ca2b53</guid>
             <pubDate>Sat, 09 Jan 2016 08:36:46 GMT</pubDate>
