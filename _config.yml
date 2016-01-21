@@ -7,10 +7,10 @@ color:
     - '#7090A0'
     - '#000000'
     - '#A8D0E0'
-  brandStrength: 1
+  brandStrength: 0.447368
   lightness: 0.125
   rhythmicContrast: 0.648026
-  saturation: 0.258223
+  saturation: 0.556743
 cta: {}
 layout_spectrum: 0.893092
 name: Visalian
