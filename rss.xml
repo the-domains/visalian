@@ -4,11 +4,18 @@
         <description><![CDATA[Visalian]]></description>
         <link>http://visalian.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Wed, 20 Jan 2016 23:51:47 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 16 Feb 2016 05:15:04 GMT</lastBuildDate>
         <atom:link href="http://visalian.com/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
+            <title><![CDATA[Arcade City]]></title>
+            <description><![CDATA[<article><h1>Arcade City</h1></article>]]></description>
+            <link>https://arcade.city/</link>
+            <guid isPermaLink="false">23605e6f-d1f3-4c75-ac82-e8da89791aec</guid>
+            <pubDate>Tue, 16 Feb 2016 05:14:28 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Brave Software | Building a Better Web]]></title>
-            <description><![CDATA[<article><h1>Brave Software | Building a Better Web</h1><p>By Brendan Eich President and CEO Posted January 20, 2016 The Web is always in trouble for some reason or other. I remember when Microsoft came after Netscape and threatened to lock Web standards into IE. Only the Web is so big, with such reach to billions of users, that no one owns it.</p><img src="https://brave.com/assets/img/sliders/revolution/surfers_bluewash_tan_tall.jpg"></article>]]></description>
+            <description><![CDATA[<article><h1>Brave Software | Building a Better Web</h1><p>By Brendan Eich President and CEO Posted January 20, 2016 The Web is always in trouble for some reason or other. I remember when Microsoft came after Netscape and threatened to lock Web standards into IE. Only the Web is so big, with such reach to billions of users, that no one owns it.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/6e9708c06546efc9b83e1cb975e0b76301dff94d.jpg"></article>]]></description>
             <link>https://brave.com/</link>
             <guid isPermaLink="false">1f86af04-0198-4deb-b472-c52d76fc0e39</guid>
             <pubDate>Wed, 20 Jan 2016 23:51:46 GMT</pubDate>
