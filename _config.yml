@@ -1,5 +1,19 @@
+name: Visalian
+favicon: null
+layout_spectrum: 1
+typography_spectrum: 0.90359
+cta:
+  domain: null
+  bucket: null
+  version: null
 analytics:
   google: UA-68822801-2
+  facebook: null
+  twitter: null
+opengraph:
+  image: null
+  type: null
+  appId: null
 color:
   brandColors:
     - '#A8C0C8'
@@ -9,11 +23,6 @@ color:
     - '#A8D0E0'
   brandStrength: 0.447368
   lightness: 0.125
-  rhythmicContrast: 0.648026
   saturation: 0.556743
-cta: {}
-layout_spectrum: 0.893092
-name: Visalian
-opengraph: {}
+  rhythmicContrast: 0.648026
 purpose: []
-typography_spectrum: 0.90359
