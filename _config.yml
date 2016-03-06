@@ -1,5 +1,20 @@
+name: Visalian
+favicon: null
+layout_spectrum: 0.997532
+typography_spectrum: 0.45981
+title: Not so random stuff 0XCD0C28670CBC9E42
+cta:
+  domain: null
+  bucket: null
+  version: null
 analytics:
   google: UA-68822801-2
+  facebook: null
+  twitter: null
+opengraph:
+  image: null
+  type: null
+  appId: null
 color:
   brandColors:
     - '#A8C0C8'
@@ -9,11 +24,6 @@ color:
     - '#A8D0E0'
   brandStrength: 0.9375
   lightness: 0.375
-  rhythmicContrast: 0.5
   saturation: 0.1875
-cta: {}
-layout_spectrum: 0.997532
-name: Visalian
-opengraph: {}
+  rhythmicContrast: 0.5
 purpose: []
-typography_spectrum: 0.45981
