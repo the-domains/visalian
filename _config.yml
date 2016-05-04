@@ -1,7 +1,7 @@
 name: Visalian
 favicon: null
-layout_spectrum: 0.997532
-typography_spectrum: 0.45981
+layout_spectrum: 0.997
+typography_spectrum: 0.0006
 title: Not so random stuff 0XCD0C28670CBC9E42
 cta:
   domain: null
@@ -25,5 +25,5 @@ color:
   brandStrength: 0.9375
   lightness: 0.375
   saturation: 0.1875
-  rhythmicContrast: 0.5
+  rhythmicContrast: 0.75
 purpose: []
