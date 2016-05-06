@@ -4,8 +4,15 @@
         <description><![CDATA[Not so random stuff 0XCD0C28670CBC9E42]]></description>
         <link>http://visalian.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Thu, 05 May 2016 14:00:52 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 May 2016 23:52:27 GMT</lastBuildDate>
         <atom:link href="http://visalian.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Bernie Sanders Misses Chance to Explain Why D.C.'s Rich Outlive U.S.'s Poor]]></title>
+            <description><![CDATA[<article><h1>Bernie Sanders Misses Chance to Explain Why D.C.'s Rich Outlive U.S.'s Poor</h1><p>WITH THE WEST VIRGINIA primary five days away, Bernie Sanders traveled Thursday to the state's impoverished McDowell County, which has the lowest male life expectancy in the country. During a campaign speech there, he cited the disparity in life expectancy between McDowell and Fairfax, Virginia, a prosperous suburb of Washington, D.C.: The average life expectancy for men in this county is just 64 years.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/32e2d5d0b0fca939a6c4fe81be1ae217b4efeae0.jpg"></article>]]></description>
+            <link>https://theintercept.com/2016/05/05/bernie-sanders-misses-chance-to-explain-why-d-c-s-rich-outlive-u-s-s-poor/</link>
+            <guid isPermaLink="false">1ec031a6-3310-4a57-b9d9-b5df2fe54ff7</guid>
+            <pubDate>Fri, 06 May 2016 23:52:10 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Introducing the organisation that will kill corporations]]></title>
             <description><![CDATA[<article><h1>Introducing the organisation that will kill corporations</h1><p>Imagine a world where companies didn't exist. Instead of corporate entities being brought into existence through statute, networks of individuals would work, co-operate and generate wealth via DAOs - decentralised autonomous organisations. The hierarchical, centrally governed organisations we're all so familiar with would not be needed.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/6ad8d79efae49f02d1ab9dd4091ca8daab415cd5.jpg"></article>]]></description>
@@ -68,13 +75,6 @@
             <link>http://businessoverbroadway.com/top-10-skills-in-data-science</link>
             <guid isPermaLink="false">1c9c5ae7-481c-459e-8bef-eeb0605e53eb</guid>
             <pubDate>Sat, 09 Jan 2016 19:46:36 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Applications of Security Deposits and Prediction Markets You Might Not Have Thought About - Ethereum Blog]]></title>
-            <description><![CDATA[<article><h1>Applications of Security Deposits and Prediction Markets You Might Not Have Thought About - Ethereum Blog</h1><p>Special thanks to Vlad Zamfir for his work in developing many of the ideas behind prediction markets for content curation. For the past six years, people have been searching to try to find those elusive applications of blockchain technology that could finally break out into the mainstream.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/243b2b4efd5c1f6584a5e8e3806816427ea28421.jpg"></article>]]></description>
-            <link>https://blog.ethereum.org/2015/11/24/applications-of-security-deposits-and-prediction-markets-you-might-not-have-thought-about/</link>
-            <guid isPermaLink="false">1982101e-4805-4db6-a7ad-a72366ce7c4b</guid>
-            <pubDate>Sat, 09 Jan 2016 08:55:45 GMT</pubDate>
         </item>
     </channel>
 </rss>
