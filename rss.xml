@@ -4,8 +4,15 @@
         <description><![CDATA[Not so random stuff 0XCD0C28670CBC9E42]]></description>
         <link>http://visalian.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Fri, 06 May 2016 23:52:54 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 May 2016 16:43:34 GMT</lastBuildDate>
         <atom:link href="http://visalian.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[How Armenian gangsters blew up the fingerprint-password debate]]></title>
+            <description><![CDATA[<article><h1>How Armenian gangsters blew up the fingerprint-password debate</h1><p>Much ado has been made over a Los Angeles judge's February decision to grant a search warrant allowing authorities to take Bkhchadzhyan's fingerprint and use it to unlock her iPhone. Surfacing in the news this past week with drama and fanfare, it's an unprecedented revelation that has divided legal experts, and given our collective Big Brother paranoia and infosec hysteria a shot in the arm that we really didn't need.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/18892fbbf3d8cecf66fdc1eb5786301d9708156c.jpg"></article>]]></description>
+            <link>http://www.engadget.com/2016/05/06/how-armenian-gangsters-blew-up-the-fingerprint-password-debate/</link>
+            <guid isPermaLink="false">41042e66-eebf-460c-9cc3-10520106d057</guid>
+            <pubDate>Sat, 07 May 2016 16:43:32 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Homeland security want to subpoena Techdirt over the identity of a hyperbolic commenter]]></title>
             <description><![CDATA[<article><h1>Homeland security want to subpoena Techdirt over the identity of a hyperbolic commenter</h1><p>This week, Techdirt's Tim Cushing published a story about the Hancock County, IN Sheriff's Department officers who stole $240,000 under color of asset forfeiture. Digger, a Techdirt commenter, remarked, "The only 'bonus' these criminals [the Sheriff's Department officers] are likely to see could be a bullet to their apparently empty skulls."</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/72f341cf14038872a17ae432bc2181da9b48f368.jpg"></article>]]></description>
@@ -68,13 +75,6 @@
             <link>http://nextmarket.co/blogs/smarthomeweekly/101249799-hedge-vs-wedge-alexa-ces-and-the-difference-between-amazon-and-apple-smart-home-strategies</link>
             <guid isPermaLink="false">47626f81-4d4f-4c84-94f5-ea460c6b447f</guid>
             <pubDate>Wed, 13 Jan 2016 06:34:05 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[ZigBee 3.0 to Include Energy Harvesting | EE Times]]></title>
-            <description><![CDATA[<article><h1>ZigBee 3.0 to Include Energy Harvesting | EE Times</h1><p>The ZigBee Alliance industry association has said that it will work to combine EnOcean energy harvesting with ZigBee 3.0 to help address a breadth of IoT applications in smart home, smart city and industry 4.0.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/c3761f41783ae484f42286231bc6750866511db1.png"></article>]]></description>
-            <link>http://www.eetimes.com/document.asp?doc_id=1328537</link>
-            <guid isPermaLink="false">935ae8f0-4204-481a-aaea-a1923347f58a</guid>
-            <pubDate>Tue, 12 Jan 2016 23:17:09 GMT</pubDate>
         </item>
     </channel>
 </rss>
