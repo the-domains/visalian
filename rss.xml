@@ -4,8 +4,22 @@
         <description><![CDATA[Not so random stuff 0XCD0C28670CBC9E42]]></description>
         <link>http://visalian.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Sat, 07 May 2016 23:45:20 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 May 2016 06:28:46 GMT</lastBuildDate>
         <atom:link href="http://visalian.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Orbital Composites 3D Printed Satellites and Drones]]></title>
+            <description><![CDATA[<article><h1>Orbital Composites 3D Printed Satellites and Drones</h1><p>Orbital Composites aims to completely 3d print drones and satellites, here interviewed at 3D Printing USA. Orbital Composites has created new composite materials and 3D printer processes. The printer has a coaxial extruder. It can coat continuous fibers with a thermoplastic sheath. Carbon or copper fibers may be used to 3D print with.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/17f25cfe36964df31e00febe1af18e08f28b6074.jpg"></article>]]></description>
+            <link>https://youtube.com/watch?v=872_TTYBXcE&amp;feature=youtu.be</link>
+            <guid isPermaLink="false">2a23be6d-a16e-4fa4-8bc1-f368baa70849</guid>
+            <pubDate>Sun, 08 May 2016 06:28:42 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The Economy Is Rigged, and Other Presidential Campaign Myths]]></title>
+            <description><![CDATA[<article><h1>The Economy Is Rigged, and Other Presidential Campaign Myths</h1><p>If you want to learn about the economy, there are good and bad places to go. Probably the worst source of reliable information is the current crop of presidential candidates. Dissembling and exaggeration are no strangers to politics, but this year's campaigns have been particularly egregious.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/4f962095d2a022cb23acd6a264b2bfc3b423eb9b.jpg"></article>]]></description>
+            <link>http://mobile.nytimes.com/2016/05/08/upshot/the-economy-is-rigged-and-other-presidential-campaign-myths.html?hpw&amp;rref=upshot&amp;action=click&amp;pgtype=Homepage&amp;module=well-region&amp;region=bottom-well&amp;WT.nav=bottom-well&amp;_r=0&amp;referer=https://t.co/QJJIUR1ijp</link>
+            <guid isPermaLink="false">3c36ee5f-b1f1-4d71-b63b-3b146eedb362</guid>
+            <pubDate>Sat, 07 May 2016 23:45:26 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Republicans Don't Want to Know Costs of U.S. Nuclear Arsenal]]></title>
             <description><![CDATA[<article><h1>Republicans Don't Want to Know Costs of U.S. Nuclear Arsenal</h1><p>Republican lawmakers in the House of Representatives have lined up to quietly kill a cost estimate of the Pentagon's three-decade nuclear modernization program, which experts predict will exceed $1 trillion. The vote was mentioned briefly in Politico's morning briefing list last week but otherwise received no media coverage.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/92539c1e6de1410a91427f95e2028bbfb2238b5e.jpg"></article>]]></description>
@@ -61,20 +75,6 @@
             <link>http://arstechnica.com/tech-policy/2016/02/house-bill-would-kill-state-local-bills-that-aim-to-weaken-smartphone-crypto/</link>
             <guid isPermaLink="false">12760f8d-da5b-4856-86b3-a931197596d6</guid>
             <pubDate>Wed, 17 Feb 2016 00:11:40 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Arcade City]]></title>
-            <description><![CDATA[<article><h1>Arcade City</h1></article>]]></description>
-            <link>https://arcade.city/</link>
-            <guid isPermaLink="false">23605e6f-d1f3-4c75-ac82-e8da89791aec</guid>
-            <pubDate>Tue, 16 Feb 2016 05:14:28 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Brave Software | Building a Better Web]]></title>
-            <description><![CDATA[<article><h1>Brave Software | Building a Better Web</h1><p>By Brendan Eich President and CEO Posted January 20, 2016 The Web is always in trouble for some reason or other. I remember when Microsoft came after Netscape and threatened to lock Web standards into IE. Only the Web is so big, with such reach to billions of users, that no one owns it.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/6e9708c06546efc9b83e1cb975e0b76301dff94d.jpg"></article>]]></description>
-            <link>https://brave.com/</link>
-            <guid isPermaLink="false">1f86af04-0198-4deb-b472-c52d76fc0e39</guid>
-            <pubDate>Wed, 20 Jan 2016 23:51:46 GMT</pubDate>
         </item>
     </channel>
 </rss>
