@@ -4,8 +4,15 @@
         <description><![CDATA[Not so random stuff 0XCD0C28670CBC9E42]]></description>
         <link>http://visalian.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Tue, 10 May 2016 15:20:01 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 May 2016 15:20:02 GMT</lastBuildDate>
         <atom:link href="http://visalian.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Schools are using bitcoin technology to track students]]></title>
+            <description><![CDATA[<article><h1>Schools are using bitcoin technology to track students</h1><p>Recording and verifying candidates' credentials can be costly and time-consuming for academia and businesses alike. Now, some education facilities are turning to bitcoin technology for help. They are using blockchain, which was developed alongside the digital cryptocurrency bitcoin, to record their students' achievements in a cheap, secure and public way.</p><img src="http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/02/06/101397200-157307281.1910x1000.jpg"></article>]]></description>
+            <link>http://www.cnbc.com/2016/05/09/schools-are-recording-students-results-on-the-blockchain.html</link>
+            <guid isPermaLink="false">f1e5ac2c-3eba-47e6-8a64-4df24bbb22d5</guid>
+            <pubDate>Tue, 10 May 2016 15:19:29 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Lessons learned from a year of opening police data]]></title>
             <description><![CDATA[<article><h1>Lessons learned from a year of opening police data</h1><p>President Barack Obama speaks to the press after a meeting with members of the President's Task Force on 21st Century Policing. (Photo credit: Chuck Kennedy/Official White House Photo) It's been almost a year since the White House first announced that it would be leading an effort to unite law enforcement ...</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/011cc1e1169b9d8846c719f6552d9dc256e002f5.jpg"></article>]]></description>
@@ -68,13 +75,6 @@
             <link>https://theintercept.com/2016/05/05/bernie-sanders-misses-chance-to-explain-why-d-c-s-rich-outlive-u-s-s-poor/</link>
             <guid isPermaLink="false">1ec031a6-3310-4a57-b9d9-b5df2fe54ff7</guid>
             <pubDate>Fri, 06 May 2016 23:52:10 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Introducing the organisation that will kill corporations]]></title>
-            <description><![CDATA[<article><h1>Introducing the organisation that will kill corporations</h1><p>Imagine a world where companies didn't exist. Instead of corporate entities being brought into existence through statute, networks of individuals would work, co-operate and generate wealth via DAOs - decentralised autonomous organisations. The hierarchical, centrally governed organisations we're all so familiar with would not be needed.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/6ad8d79efae49f02d1ab9dd4091ca8daab415cd5.jpg"></article>]]></description>
-            <link>http://www.cityam.com/240198/introducing-the-dao-the-organisation-that-will-kill-corporations</link>
-            <guid isPermaLink="false">d6f31663-77f3-4162-89d0-f519232db94f</guid>
-            <pubDate>Thu, 05 May 2016 14:00:49 GMT</pubDate>
         </item>
     </channel>
 </rss>
