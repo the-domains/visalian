@@ -4,8 +4,15 @@
         <description><![CDATA[Not so random stuff 0XCD0C28670CBC9E42]]></description>
         <link>http://visalian.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Sun, 08 May 2016 06:29:32 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 May 2016 15:20:01 GMT</lastBuildDate>
         <atom:link href="http://visalian.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Lessons learned from a year of opening police data]]></title>
+            <description><![CDATA[<article><h1>Lessons learned from a year of opening police data</h1><p>President Barack Obama speaks to the press after a meeting with members of the President's Task Force on 21st Century Policing. (Photo credit: Chuck Kennedy/Official White House Photo) It's been almost a year since the White House first announced that it would be leading an effort to unite law enforcement ...</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/011cc1e1169b9d8846c719f6552d9dc256e002f5.jpg"></article>]]></description>
+            <link>http://sunlightfoundation.com/blog/2016/05/04/lessons-learned-from-a-year-of-opening-police-data/</link>
+            <guid isPermaLink="false">64327199-087d-4490-834a-303760694da3</guid>
+            <pubDate>Tue, 10 May 2016 15:19:13 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Orbital Composites 3D Printed Satellites and Drones]]></title>
             <description><![CDATA[<article><h1>Orbital Composites 3D Printed Satellites and Drones</h1><p>Orbital Composites aims to completely 3d print drones and satellites, here interviewed at 3D Printing USA. Orbital Composites has created new composite materials and 3D printer processes. The printer has a coaxial extruder. It can coat continuous fibers with a thermoplastic sheath. Carbon or copper fibers may be used to 3D print with.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/17f25cfe36964df31e00febe1af18e08f28b6074.jpg"></article>]]></description>
@@ -15,7 +22,7 @@
         </item>
         <item>
             <title><![CDATA[The Inexorable Rise of The DAO - Slock.it Blog]]></title>
-            <description><![CDATA[<article><h1>The Inexorable Rise of The DAO - Slock.it Blog</h1><p>The Inexorable Rise of The DAO As I write this article, " The DAO" has become the second largest holder of ether on the planet (overtaking the Ethereum Foundation in the process) with 2,289,016 ETH. Fun fact: that's over 38% of all ETH in all Ethereum contracts combined.</p><img src="https://cdn-images-1.medium.com/max/1200/1*WIzysPU8VqETG1C48-b0mw.png"></article>]]></description>
+            <description><![CDATA[<article><h1>The Inexorable Rise of The DAO - Slock.it Blog</h1><p>The Inexorable Rise of The DAO As I write this article, " The DAO" has become the second largest holder of ether on the planet (overtaking the Ethereum Foundation in the process) with 2,289,016 ETH. Fun fact: that's over 38% of all ETH in all Ethereum contracts combined.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/771da523b7ece6560c80ab317cf7394ae8af54e4.png"></article>]]></description>
             <link>https://blog.slock.it/the-inexorable-rise-of-the-dao-2b6e739b2615?gi=c5b1fe3c7157</link>
             <guid isPermaLink="false">2465dbe9-d9a6-4642-9d97-55c8023c2ed5</guid>
             <pubDate>Sun, 08 May 2016 06:28:38 GMT</pubDate>
@@ -68,13 +75,6 @@
             <link>http://www.cityam.com/240198/introducing-the-dao-the-organisation-that-will-kill-corporations</link>
             <guid isPermaLink="false">d6f31663-77f3-4162-89d0-f519232db94f</guid>
             <pubDate>Thu, 05 May 2016 14:00:49 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Satoshi Is Actually Building an Ethereum Company (and Other Developments)]]></title>
-            <description><![CDATA[<article><h1>Satoshi Is Actually Building an Ethereum Company (and Other Developments)</h1><p>I'm a big believer in transparency when it comes to systems that greatly affect lots of people (or have the potential to). Vitalik has done a great job with this, and I highly respect him for it. Transparency is necessary so that people can better understand how a system operates.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/5046a1d484e49beaf9fc1414ddf42b7de6d4277e.jpg"></article>]]></description>
-            <link>http://visalian.com/satoshi-is-actually-building-an-ethereum-company-and-other/index.html</link>
-            <guid isPermaLink="false">10f0d340-d89c-4f09-b388-80b3c4066229</guid>
-            <pubDate>Wed, 04 May 2016 21:16:23 GMT</pubDate>
         </item>
     </channel>
 </rss>
