@@ -4,11 +4,18 @@
         <description><![CDATA[Not so random stuff 0XCD0C28670CBC9E42]]></description>
         <link>http://visalian.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Tue, 10 May 2016 15:20:02 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 16 May 2016 01:17:02 GMT</lastBuildDate>
         <atom:link href="http://visalian.com/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
+            <title><![CDATA[visual-poetry: by zach urbina (+)]]></title>
+            <description><![CDATA[<article><h1>visual-poetry: by zach urbina (+)</h1><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/e7f31c7ba6b2aa94277329f10224ca435882634c.jpg"></article>]]></description>
+            <link>http://cipherface.tumblr.com/post/144308606456/visual-poetry-by-zach-urbina</link>
+            <guid isPermaLink="false">311d8952-2dff-42e4-93a3-d01542a68c8b</guid>
+            <pubDate>Mon, 16 May 2016 01:16:33 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Schools are using bitcoin technology to track students]]></title>
-            <description><![CDATA[<article><h1>Schools are using bitcoin technology to track students</h1><p>Recording and verifying candidates' credentials can be costly and time-consuming for academia and businesses alike. Now, some education facilities are turning to bitcoin technology for help. They are using blockchain, which was developed alongside the digital cryptocurrency bitcoin, to record their students' achievements in a cheap, secure and public way.</p><img src="http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/02/06/101397200-157307281.1910x1000.jpg"></article>]]></description>
+            <description><![CDATA[<article><h1>Schools are using bitcoin technology to track students</h1><p>Recording and verifying candidates' credentials can be costly and time-consuming for academia and businesses alike. Now, some education facilities are turning to bitcoin technology for help. They are using blockchain, which was developed alongside the digital cryptocurrency bitcoin, to record their students' achievements in a cheap, secure and public way.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/209cd4dc8c3c2fedbde0abba0837b27be3f6ec57.jpg"></article>]]></description>
             <link>http://www.cnbc.com/2016/05/09/schools-are-recording-students-results-on-the-blockchain.html</link>
             <guid isPermaLink="false">f1e5ac2c-3eba-47e6-8a64-4df24bbb22d5</guid>
             <pubDate>Tue, 10 May 2016 15:19:29 GMT</pubDate>
@@ -68,13 +75,6 @@
             <link>https://www.texasobserver.org/above-the-law-pamela-elliott-sheriff/</link>
             <guid isPermaLink="false">559cee52-311b-4e6b-a32b-2c6c6ecc718f</guid>
             <pubDate>Fri, 06 May 2016 23:52:23 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Bernie Sanders Misses Chance to Explain Why D.C.'s Rich Outlive U.S.'s Poor]]></title>
-            <description><![CDATA[<article><h1>Bernie Sanders Misses Chance to Explain Why D.C.'s Rich Outlive U.S.'s Poor</h1><p>WITH THE WEST VIRGINIA primary five days away, Bernie Sanders traveled Thursday to the state's impoverished McDowell County, which has the lowest male life expectancy in the country. During a campaign speech there, he cited the disparity in life expectancy between McDowell and Fairfax, Virginia, a prosperous suburb of Washington, D.C.: The average life expectancy for men in this county is just 64 years.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/32e2d5d0b0fca939a6c4fe81be1ae217b4efeae0.jpg"></article>]]></description>
-            <link>https://theintercept.com/2016/05/05/bernie-sanders-misses-chance-to-explain-why-d-c-s-rich-outlive-u-s-s-poor/</link>
-            <guid isPermaLink="false">1ec031a6-3310-4a57-b9d9-b5df2fe54ff7</guid>
-            <pubDate>Fri, 06 May 2016 23:52:10 GMT</pubDate>
         </item>
     </channel>
 </rss>
