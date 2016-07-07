@@ -4,7 +4,7 @@
         <description><![CDATA[Not so random stuff 0XCD0C28670CBC9E42]]></description>
         <link>http://visalian.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Thu, 07 Jul 2016 02:46:51 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 07 Jul 2016 02:46:58 GMT</lastBuildDate>
         <atom:link href="http://visalian.com/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[Why Kids Should Learn To Code (And How To Get Them Started) | Learning]]></title>
@@ -12,6 +12,13 @@
             <link>http://www.cbc.ca/parents/learning/view/why-kids-should-learn-to-code-and-how-to-get-them-started?utm_content=buffer28405&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer</link>
             <guid isPermaLink="false">68a5e762-0063-4f7d-80ac-ad58b074eac8</guid>
             <pubDate>Sun, 22 May 2016 02:39:02 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Build A 3D Printer Workhorse, Not an Amazing Disappointment Machine]]></title>
+            <description><![CDATA[<article><h1>Build A 3D Printer Workhorse, Not an Amazing Disappointment Machine</h1><p>3D printers have become incredibly cheap, you can get a fully workable unit for $200 - even without throwing your money down a crowdfunded abyss. Looking at the folks who still buy kits or even build their own 3D printer from scratch, investing far more than those $200 and so many hours of work into a machine you can buy for cheap, the question "Why the heck would you do that?"</p><img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/6e5649c3369cfc6b3d7335775fe95e0a/noop.jpg?input=https%3A%2F%2Fhackadaycom.files.wordpress.com%2F2016%2F06%2Fprinter_farm_featured2.jpg"></article>]]></description>
+            <link>http://hackaday.com/2016/07/06/build-a-3d-printer-workhorse/</link>
+            <guid isPermaLink="false">21d92acf-8ce4-4bf5-bd16-703026c99e33</guid>
+            <pubDate>Thu, 07 Jul 2016 02:46:55 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[7 services using open data and innovation that you (probably) already use | News | Open Data Institute]]></title>
@@ -68,13 +75,6 @@
             <link>https://theintercept.com/2016/05/02/republicans-dont-want-to-know-costs-of-u-s-nuclear-arsenal/</link>
             <guid isPermaLink="false">53b15353-f90d-441c-a496-35afc5388cd3</guid>
             <pubDate>Sat, 07 May 2016 23:45:18 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[How Armenian gangsters blew up the fingerprint-password debate]]></title>
-            <description><![CDATA[<article><h1>How Armenian gangsters blew up the fingerprint-password debate</h1><p>Much ado has been made over a Los Angeles judge's February decision to grant a search warrant allowing authorities to take Bkhchadzhyan's fingerprint and use it to unlock her iPhone. Surfacing in the news this past week with drama and fanfare, it's an unprecedented revelation that has divided legal experts, and given our collective Big Brother paranoia and infosec hysteria a shot in the arm that we really didn't need.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/18892fbbf3d8cecf66fdc1eb5786301d9708156c.jpg"></article>]]></description>
-            <link>http://www.engadget.com/2016/05/06/how-armenian-gangsters-blew-up-the-fingerprint-password-debate/</link>
-            <guid isPermaLink="false">41042e66-eebf-460c-9cc3-10520106d057</guid>
-            <pubDate>Sat, 07 May 2016 16:43:32 GMT</pubDate>
         </item>
     </channel>
 </rss>
