@@ -4,7 +4,7 @@
         <description><![CDATA[Not so random stuff 0XCD0C28670CBC9E42]]></description>
         <link>http://visalian.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Wed, 10 Aug 2016 15:29:19 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 10 Aug 2016 15:29:14 GMT</lastBuildDate>
         <atom:link href="http://visalian.com/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[Why Kids Should Learn To Code (And How To Get Them Started) | Learning]]></title>
@@ -12,13 +12,6 @@
             <link>http://www.cbc.ca/parents/learning/view/why-kids-should-learn-to-code-and-how-to-get-them-started?utm_content=buffer28405&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer</link>
             <guid isPermaLink="false">68a5e762-0063-4f7d-80ac-ad58b074eac8</guid>
             <pubDate>Sun, 22 May 2016 02:39:02 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[A free/open computer on a card that you swap in and out of a 3D printed laptop]]></title>
-            <description><![CDATA[<article><h1>A free/open computer on a card that you swap in and out of a 3D printed laptop</h1><p>Lou Cabron writes, "Finally, after five years of work, Rhombus Tech has gone from a free/libre/open source "spec" to their first actual modular devices! The video is amazing. " You can literally plug in a new CPU -- or swap your CPU into a variety of devices.</p><img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/f93d1be0dfe82eb2965f283168ca4003/noop.jpg?input=http%3A%2F%2Fmedia.boingboing.net%2Fwp-content%2Fuploads%2F2016%2F08%2Feoma-computercard-wallet_jpg_project-body.jpg"></article>]]></description>
-            <link>http://boingboing.net/2016/08/04/a-freeopen-computer-on-a-card.html</link>
-            <guid isPermaLink="false">3455b548-e3aa-4819-96e8-6003e8229d7c</guid>
-            <pubDate>Wed, 10 Aug 2016 15:29:17 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Home - New]]></title>
@@ -75,6 +68,13 @@
             <link>https://blog.slock.it/the-inexorable-rise-of-the-dao-2b6e739b2615?gi=c5b1fe3c7157</link>
             <guid isPermaLink="false">2465dbe9-d9a6-4642-9d97-55c8023c2ed5</guid>
             <pubDate>Sun, 08 May 2016 06:28:38 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The Economy Is Rigged, and Other Presidential Campaign Myths]]></title>
+            <description><![CDATA[<article><h1>The Economy Is Rigged, and Other Presidential Campaign Myths</h1><p>If you want to learn about the economy, there are good and bad places to go. Probably the worst source of reliable information is the current crop of presidential candidates. Dissembling and exaggeration are no strangers to politics, but this year's campaigns have been particularly egregious.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/4f962095d2a022cb23acd6a264b2bfc3b423eb9b.jpg"></article>]]></description>
+            <link>http://mobile.nytimes.com/2016/05/08/upshot/the-economy-is-rigged-and-other-presidential-campaign-myths.html?hpw&amp;rref=upshot&amp;action=click&amp;pgtype=Homepage&amp;module=well-region&amp;region=bottom-well&amp;WT.nav=bottom-well&amp;_r=0&amp;referer=https://t.co/QJJIUR1ijp</link>
+            <guid isPermaLink="false">3c36ee5f-b1f1-4d71-b63b-3b146eedb362</guid>
+            <pubDate>Sat, 07 May 2016 23:45:26 GMT</pubDate>
         </item>
     </channel>
 </rss>
