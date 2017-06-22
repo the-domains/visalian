@@ -1,7 +1,18 @@
+layout_spectrum: 0.3505435805587965
+typography_spectrum: 0.9542037339005066
+color:
+  brandColors:
+    - '#F8F9FC'
+    - '#224FAA'
+    - '#A62626'
+    - '#3D588F'
+    - '#C7CAD1'
+  brandStrength: 0.3538611854191427
+  lightness: 0.2222938869095933
+  saturation: 0.1436350756118277
+  rhythmicContrast: 0.6075683573717343
 name: Visalian
 favicon: null
-layout_spectrum: 0.569
-typography_spectrum: 0.0006
 title: Not so random stuff 0XCD0C28670CBC9E42
 cta:
   domain: null
@@ -15,15 +26,35 @@ opengraph:
   image: null
   type: null
   appId: null
-color:
-  brandColors:
-    - '#A8C0C8'
-    - '#000000'
-    - '#7090A0'
-    - '#000000'
-    - '#A8D0E0'
-  brandStrength: 0.9375
-  lightness: 0.375
-  saturation: 0.1875
-  rhythmicContrast: 0.75
-purpose: []
+purpose:
+  - type: external
+    url: 'https://www.eff.org/'
+    label: Please help EFF out.  More than ever.
+content:
+  - id: !<tag:yaml.org,2002:js/undefined> ''
+    type: image
+    html: >-
+      <img
+      src="https://the-grid-user-content.s3-us-west-2.amazonaws.com/f1508071-8d48-4a5d-a6e7-ac09b1757118.png">
+    src: >-
+      https://the-grid-user-content.s3-us-west-2.amazonaws.com/f1508071-8d48-4a5d-a6e7-ac09b1757118.png
+    metadata:
+      author: []
+      related: []
+      publisher:
+        url: 'https://the-grid-user-content.s3-us-west-2.amazonaws.com'
+        name: The-grid-user-content
+        favicon: null
+        domain: the-grid-user-content.s3-us-west-2.amazonaws.com
+      keywords: []
+      description: ''
+      app_links: []
+      '@context': 'http://schema.org'
+      '@type': MediaObject
+      datePublished: null
+    title: !<tag:yaml.org,2002:js/undefined> ''
+    caption: !<tag:yaml.org,2002:js/undefined> ''
+    text: !<tag:yaml.org,2002:js/undefined> ''
+github: true
+content_rating:
+  adult: false
