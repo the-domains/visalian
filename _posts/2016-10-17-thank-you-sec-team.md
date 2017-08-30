@@ -1,7 +1,7 @@
 ---
 title: Thank you Sec team
-datePublished: '2017-08-30T20:30:17.662Z'
-dateModified: '2017-08-30T20:30:16.816Z'
+datePublished: '2017-08-30T20:58:12.515Z'
+dateModified: '2017-08-30T20:58:11.893Z'
 publisher: {}
 author: []
 inFeed: true
