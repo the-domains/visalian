@@ -4,22 +4,15 @@
         <description><![CDATA[Not so random stuff 0XCD0C28670CBC9E42]]></description>
         <link>http://visalian.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Thu, 24 Aug 2017 19:13:43 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Aug 2017 20:26:02 GMT</lastBuildDate>
         <atom:link href="http://visalian.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 24 Aug 2017 19:13:42 GMT</pubDate>
+        <pubDate>Wed, 30 Aug 2017 20:24:14 GMT</pubDate>
         <item>
             <title><![CDATA[A open source toolkit for building your own home]]></title>
             <description><![CDATA[<article><h1>A open source toolkit for building your own home</h1><p>The evidence is overwhelming that large scale collaboration leads to superior technology. FOSS showed us the way and now free and open source hardware is rapidly gaining traction. There is a growing list of open source hardware projects, which are bringing millions (billion?) of dollars of value to the world.</p><img src="https://opensource.com/sites/default/files/images/life/LIFE_housing.png"></article>]]></description>
             <link>https://opensource.com/life/16/7/getting-serious-about-open-source-homes?sc_cid=701600000011jJVAAY</link>
             <guid isPermaLink="false">9b34e4ad-77df-455c-9bf4-e719a688848f</guid>
             <pubDate>Fri, 07 Oct 2016 23:47:43 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Why Kids Should Learn To Code (And How To Get Them Started) | Learning]]></title>
-            <description><![CDATA[<article><h1>Why Kids Should Learn To Code &lpar;And How To Get Them Started&rpar; &vert; Learning</h1><p>By Erik Missio Photography by istockphoto&sol;monkeybusinessimages Promotes&colon; Think your kids are too young to learn to code&quest; Think again&period; Coding &lpar;also called programming or developing&rpar; is telling a computer&comma; app&comma; phone or website what you want it to do&period;</p><img src="http://www.cbc.ca/parents/content/imgs/_8col/whycode_lead_istock.jpg"></article>]]></description>
-            <link>http://www.cbc.ca/parents/learning/view/why-kids-should-learn-to-code-and-how-to-get-them-started?utm_content=buffer28405&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer</link>
-            <guid isPermaLink="false">68a5e762-0063-4f7d-80ac-ad58b074eac8</guid>
-            <pubDate>Mon, 17 Oct 2016 19:55:49 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Mastodon]]></title>
@@ -34,6 +27,13 @@
             <link>http://prusaprinters.org/original-prusa-i3-mk2-multi-material-upgrade-release/</link>
             <guid isPermaLink="false">edd4dc9d-0099-411d-9878-2499b69a1f63</guid>
             <pubDate>Mon, 17 Oct 2016 19:55:48 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Why Kids Should Learn To Code (And How To Get Them Started) | Learning]]></title>
+            <description><![CDATA[<article><h1>Why Kids Should Learn To Code &lpar;And How To Get Them Started&rpar; &vert; Learning</h1><p>By Erik Missio Photography by istockphoto&sol;monkeybusinessimages Promotes&colon; Think your kids are too young to learn to code&quest; Think again&period; Coding &lpar;also called programming or developing&rpar; is telling a computer&comma; app&comma; phone or website what you want it to do&period;</p><img src="http://www.cbc.ca/parents/content/imgs/_8col/whycode_lead_istock.jpg"></article>]]></description>
+            <link>http://www.cbc.ca/parents/learning/view/why-kids-should-learn-to-code-and-how-to-get-them-started?utm_content=buffer28405&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer</link>
+            <guid isPermaLink="false">68a5e762-0063-4f7d-80ac-ad58b074eac8</guid>
+            <pubDate>Mon, 17 Oct 2016 19:55:49 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Why we need the best tools on Chromebooks and Raspberry Pi]]></title>
