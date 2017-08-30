@@ -4,9 +4,16 @@
         <description><![CDATA[Not so random stuff 0XCD0C28670CBC9E42]]></description>
         <link>http://visalian.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Wed, 30 Aug 2017 20:30:42 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Aug 2017 20:31:53 GMT</lastBuildDate>
         <atom:link href="http://visalian.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 30 Aug 2017 20:29:21 GMT</pubDate>
+        <pubDate>Wed, 30 Aug 2017 20:30:26 GMT</pubDate>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[<p>Testing the embedded link  </p>,<iframe src="https://the-grid.github.io/ed-userhtml/?g=eJwlj0FPwjAYQP_K0oO3UVZgQ6UY2BIT3YIokIXLUtqPtqZbR1un4ddL9Pjy3uUt9NmxFqJvLYKiKEnGBEUKtFSBonSeoMgDaw14H_2FJ-sEOIrGN8GdNUZ3kqLO3tBxilQIvX_AWFjuR9JaaWDEbYt974AJrwCCxwIDJm-rvI6T4Z287syxq-JazavDRa7DR1_oph7yUhT59SJUU3xmmzX_0WQya6pjv13tGvPyXB6yri5Skc-28fQqoZzsyR73XyeumAtPVguazbPpPUmT7I61_ePZupYFqrsAjvGgB0DLBf7fX_4CYwhYRA" height="244"></iframe>,<p>And the URL link </p>,<p>Crypto distribution by percentage  </p>]]></description>
+            <link>https://docs.google.com/spreadsheets/d/e/2PACX-1vR2KTlZnM-Xh8MVqgBtSpDi_XvCLdDCzqdh_Dj7OBcxi235_MZpQAT_lJGLV7nXD6dC5Q-4zgeL3U2U/pubchart?oid=787492617&amp;format=interactive</link>
+            <guid isPermaLink="false">313248fc-2c05-404a-b309-9e1ef7bceaae</guid>
+            <pubDate>Wed, 30 Aug 2017 20:29:19 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[A open source toolkit for building your own home]]></title>
             <description><![CDATA[<article><h1>A open source toolkit for building your own home</h1><p>The evidence is overwhelming that large scale collaboration leads to superior technology. FOSS showed us the way and now free and open source hardware is rapidly gaining traction. There is a growing list of open source hardware projects, which are bringing millions (billion?) of dollars of value to the world.</p><img src="https://opensource.com/sites/default/files/images/life/LIFE_housing.png"></article>]]></description>
@@ -62,13 +69,6 @@
             <link>https://dzone.com/articles/making-an-alexa-raspberrynbsppi</link>
             <guid isPermaLink="false">1c39810c-9661-4a0f-82fb-d153cc447c8d</guid>
             <pubDate>Sun, 23 Oct 2016 15:13:58 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[No title]]></title>
-            <description><![CDATA[<p>Testing the embedded link  </p>,<iframe src="https://the-grid.github.io/ed-userhtml/?g=eJwlj0FPwjAYQP_K0oO3UVZgQ6UY2BIT3YIokIXLUtqPtqZbR1un4ddL9Pjy3uUt9NmxFqJvLYKiKEnGBEUKtFSBonSeoMgDaw14H_2FJ-sEOIrGN8GdNUZ3kqLO3tBxilQIvX_AWFjuR9JaaWDEbYt974AJrwCCxwIDJm-rvI6T4Z287syxq-JazavDRa7DR1_oph7yUhT59SJUU3xmmzX_0WQya6pjv13tGvPyXB6yri5Skc-28fQqoZzsyR73XyeumAtPVguazbPpPUmT7I61_ePZupYFqrsAjvGgB0DLBf7fX_4CYwhYRA" height="244"></iframe>,<p>And the URL link </p>,<p>Crypto distribution by percentage  </p>]]></description>
-            <link>https://docs.google.com/spreadsheets/d/e/2PACX-1vR2KTlZnM-Xh8MVqgBtSpDi_XvCLdDCzqdh_Dj7OBcxi235_MZpQAT_lJGLV7nXD6dC5Q-4zgeL3U2U/pubchart?oid=787492617&amp;format=interactive</link>
-            <guid isPermaLink="false">313248fc-2c05-404a-b309-9e1ef7bceaae</guid>
-            <pubDate>Wed, 30 Aug 2017 20:29:19 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[No title]]></title>
