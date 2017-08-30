@@ -30,6 +30,11 @@ purpose:
   - type: external
     url: 'https://www.eff.org/'
     label: Please help EFF out.  More than ever.
+  - type: external
+    url: >-
+      https://docs.google.com/spreadsheets/d/e/2PACX-1vR2KTlZnM-Xh8MVqgBtSpDi_XvCLdDCzqdh_Dj7OBcxi235_MZpQAT_lJGLV7nXD6dC5Q-4zgeL3U2U/pubchart?oid=545524534&format=interactive
+    label: >-
+      https://docs.google.com/spreadsheets/d/e/2PACX-1vR2KTlZnM-Xh8MVqgBtSpDi_XvCLdDCzqdh_Dj7OBcxi235_MZpQAT_lJGLV7nXD6dC5Q-4zgeL3U2U/pubchart?oid=545524534&format=interactive
 content:
   - id: !<tag:yaml.org,2002:js/undefined> ''
     type: image
