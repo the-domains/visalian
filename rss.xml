@@ -4,9 +4,9 @@
         <description><![CDATA[Not so random stuff 0XCD0C28670CBC9E42]]></description>
         <link>http://visalian.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Wed, 30 Aug 2017 20:26:02 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Aug 2017 20:30:42 GMT</lastBuildDate>
         <atom:link href="http://visalian.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 30 Aug 2017 20:24:14 GMT</pubDate>
+        <pubDate>Wed, 30 Aug 2017 20:29:21 GMT</pubDate>
         <item>
             <title><![CDATA[A open source toolkit for building your own home]]></title>
             <description><![CDATA[<article><h1>A open source toolkit for building your own home</h1><p>The evidence is overwhelming that large scale collaboration leads to superior technology. FOSS showed us the way and now free and open source hardware is rapidly gaining traction. There is a growing list of open source hardware projects, which are bringing millions (billion?) of dollars of value to the world.</p><img src="https://opensource.com/sites/default/files/images/life/LIFE_housing.png"></article>]]></description>
@@ -65,17 +65,17 @@
         </item>
         <item>
             <title><![CDATA[No title]]></title>
+            <description><![CDATA[<p>Testing the embedded link  </p>,<iframe src="https://the-grid.github.io/ed-userhtml/?g=eJwlj0FPwjAYQP_K0oO3UVZgQ6UY2BIT3YIokIXLUtqPtqZbR1un4ddL9Pjy3uUt9NmxFqJvLYKiKEnGBEUKtFSBonSeoMgDaw14H_2FJ-sEOIrGN8GdNUZ3kqLO3tBxilQIvX_AWFjuR9JaaWDEbYt974AJrwCCxwIDJm-rvI6T4Z287syxq-JazavDRa7DR1_oph7yUhT59SJUU3xmmzX_0WQya6pjv13tGvPyXB6yri5Skc-28fQqoZzsyR73XyeumAtPVguazbPpPUmT7I61_ePZupYFqrsAjvGgB0DLBf7fX_4CYwhYRA" height="244"></iframe>,<p>And the URL link </p>,<p>Crypto distribution by percentage  </p>]]></description>
+            <link>https://docs.google.com/spreadsheets/d/e/2PACX-1vR2KTlZnM-Xh8MVqgBtSpDi_XvCLdDCzqdh_Dj7OBcxi235_MZpQAT_lJGLV7nXD6dC5Q-4zgeL3U2U/pubchart?oid=787492617&amp;format=interactive</link>
+            <guid isPermaLink="false">313248fc-2c05-404a-b309-9e1ef7bceaae</guid>
+            <pubDate>Wed, 30 Aug 2017 20:29:19 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
             <description><![CDATA[<img src="https://imgflo.herokuapp.com/graph/2b2431f8e7ba7b0/d34747bd0b0bcd87950e58d7b8940736/croprotate.jpg?cropheight=1080&cropwidth=1440&degrees=-270&input=https%3A%2F%2Fpleroma.soykaf.com%2Fmedia%2F35c4bbd2-3f1d-49bf-aff0-469227fab6d8%2Fpnc__picked_media_bbdb14fa-b916-4044-93b1-0d06143f58cc.jpg&x=0&y=0">,<p>Can we talk about what the hell that is</p>]]></description>
             <link>https://pleroma.soykaf.com/media/35c4bbd2-3f1d-49bf-aff0-469227fab6d8/pnc__picked_media_bbdb14fa-b916-4044-93b1-0d06143f58cc.jpg</link>
             <guid isPermaLink="false">990129fd-6fcf-466e-a53a-049e2f2926d0</guid>
             <pubDate>Thu, 24 Aug 2017 19:13:41 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[How to Start an Asteroid Mining Company Without a Mine]]></title>
-            <description><![CDATA[<article><h1>How to Start an Asteroid Mining Company Without a Mine</h1><p>Depending on how you look at it, outer space is a gold mine. Every year, thousands of asteroids and meteors loaded with valuable metals like gold, platinum, nickel and iron come whizzing by Earth. But Daniel Faber, CEO of the asteroid mining company Deep Space Industries, is less interested in space gold than he is in another resource found in abundance on these space rocks: water.</p><img src="http://motherboard-images.vice.com/content-images/contentimage/no-id/1475431858859556.jpeg"></article>]]></description>
-            <link>http://motherboard.vice.com/read/how-to-start-an-asteroid-mining-company-without-a-mine?utm_source=twitterfeed&amp;utm_medium=twitter</link>
-            <guid isPermaLink="false">e8a5c6d6-07f7-44cc-861b-f73503344ff2</guid>
-            <pubDate>Fri, 07 Oct 2016 23:47:40 GMT</pubDate>
         </item>
     </channel>
 </rss>
