@@ -1,12 +1,12 @@
 ---
 title: ''
-dateModified: '2017-08-30T20:24:05.810Z'
+dateModified: '2017-08-30T20:30:16.816Z'
 publisher: {}
 author: []
 inFeed: true
 description: 'New print for labor tracking project looking good.  '
 via: {}
-datePublished: '2017-08-30T20:24:06.455Z'
+datePublished: '2017-08-30T20:30:17.628Z'
 sourcePath: _posts/2016-11-12-new-print-for-labor-tracking-project-looking-good.md
 starred: false
 datePublishedOriginal: '2016-11-12T00:49:21.693Z'
