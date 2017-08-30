@@ -32,8 +32,8 @@ app_links: []
 isBasedOnUrl: >-
   http://fashnerd.com/2016/10/energy-harvesting-textiles-next-generation-wearable-electronics/
 title: 'Energy Harvesting Textiles, Next-Generation Wearable Electronics?'
-datePublished: '2017-08-30T20:30:17.696Z'
-dateModified: '2017-08-30T20:30:16.816Z'
+datePublished: '2017-08-30T20:58:12.514Z'
+dateModified: '2017-08-30T20:58:11.893Z'
 via: {}
 inFeed: true
 sourcePath: >-
