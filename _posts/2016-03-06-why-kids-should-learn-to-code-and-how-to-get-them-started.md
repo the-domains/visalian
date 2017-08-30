@@ -39,8 +39,8 @@ app_links: []
 isBasedOnUrl: >-
   http://www.cbc.ca/parents/learning/view/why-kids-should-learn-to-code-and-how-to-get-them-started?utm_content=buffer28405&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 title: Why Kids Should Learn To Code (And How To Get Them Started) | Learning
-datePublished: '2017-08-30T20:24:06.487Z'
-dateModified: '2017-08-30T20:24:05.810Z'
+datePublished: '2017-08-30T20:30:17.649Z'
+dateModified: '2017-08-30T20:30:16.816Z'
 sourcePath: _posts/2016-03-06-why-kids-should-learn-to-code-and-how-to-get-them-started.md
 inFeed: true
 hasPage: false
