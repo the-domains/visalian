@@ -6,8 +6,8 @@ description: >-
   to me based on my news history its being tied to our President daily.   This
   is what you put on my world news?  Hard miss… makes me curious about your
   value as news service.
-dateModified: '2017-08-30T20:24:05.810Z'
-datePublished: '2017-08-30T20:24:06.488Z'
+dateModified: '2017-08-30T20:30:16.816Z'
+datePublished: '2017-08-30T20:30:17.640Z'
 title: ''
 author: []
 publisher: {}
