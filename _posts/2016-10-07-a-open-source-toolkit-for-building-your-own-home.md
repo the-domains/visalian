@@ -28,8 +28,8 @@ app_links: []
 isBasedOnUrl: >-
   https://opensource.com/life/16/7/getting-serious-about-open-source-homes?sc_cid=701600000011jJVAAY
 title: A open source toolkit for building your own home
-datePublished: '2017-08-30T20:24:06.445Z'
-dateModified: '2017-08-30T20:24:05.810Z'
+datePublished: '2017-08-30T20:30:17.692Z'
+dateModified: '2017-08-30T20:30:16.816Z'
 via: {}
 inFeed: true
 sourcePath: _posts/2016-10-07-a-open-source-toolkit-for-building-your-own-home.md
