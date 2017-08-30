@@ -57,8 +57,8 @@ app_links:
 isBasedOnUrl: >-
   https://headmelted.com/why-we-need-the-best-tools-on-chromebooks-and-raspberry-pi-3ab4c10a611c#.ypbi7khrq
 title: Why we need the best tools on Chromebooks and Raspberry Pi
-datePublished: '2017-08-30T20:24:06.435Z'
-dateModified: '2017-08-30T20:24:05.810Z'
+datePublished: '2017-08-30T20:30:17.698Z'
+dateModified: '2017-08-30T20:30:16.816Z'
 via: {}
 inFeed: true
 sourcePath: >-
