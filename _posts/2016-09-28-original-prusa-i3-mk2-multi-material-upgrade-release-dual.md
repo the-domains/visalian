@@ -30,8 +30,8 @@ isBasedOnUrl: 'http://prusaprinters.org/original-prusa-i3-mk2-multi-material-upg
 title: >-
   Original Prusa i3 MK2 Multi Material Upgrade Release - Dual/Quad extrusion -
   Prusa Printers
-datePublished: '2017-08-30T20:24:06.453Z'
-dateModified: '2017-08-30T20:24:05.810Z'
+datePublished: '2017-08-30T20:30:17.679Z'
+dateModified: '2017-08-30T20:30:16.816Z'
 via: {}
 inFeed: true
 sourcePath: _posts/2016-09-28-original-prusa-i3-mk2-multi-material-upgrade-release-dual.md
