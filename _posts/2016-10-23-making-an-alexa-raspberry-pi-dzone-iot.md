@@ -27,8 +27,8 @@ inLanguage: en
 app_links: []
 isBasedOnUrl: 'https://dzone.com/articles/making-an-alexa-raspberrynbsppi'
 title: Making an Alexa Raspberry Pi - DZone IoT
-datePublished: '2017-08-30T20:24:06.485Z'
-dateModified: '2017-08-30T20:24:05.810Z'
+datePublished: '2017-08-30T20:30:17.698Z'
+dateModified: '2017-08-30T20:30:16.816Z'
 via: {}
 inFeed: true
 sourcePath: _posts/2016-10-23-making-an-alexa-raspberry-pi-dzone-iot.md
