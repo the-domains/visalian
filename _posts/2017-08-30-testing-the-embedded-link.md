@@ -7,14 +7,14 @@ description: 'Testing the embedded link  '
 app_links: []
 isBasedOnUrl: >-
   https://docs.google.com/spreadsheets/d/e/2PACX-1vR2KTlZnM-Xh8MVqgBtSpDi_XvCLdDCzqdh_Dj7OBcxi235_MZpQAT_lJGLV7nXD6dC5Q-4zgeL3U2U/pubchart?oid=787492617&format=interactive
-datePublished: '2017-08-30T20:29:19.891Z'
-dateModified: '2017-08-30T20:29:03.797Z'
+datePublished: '2017-08-30T20:30:17.649Z'
+dateModified: '2017-08-30T20:30:16.816Z'
 title: ''
 via: {}
 inFeed: true
+sourcePath: _posts/2017-08-30-testing-the-embedded-link.md
 starred: false
 datePublishedOriginal: '2017-08-30T20:29:19.891Z'
-sourcePath: _posts/2017-08-30-testing-the-embedded-link.md
 _context: 'http://schema.org'
 _type: MediaObject
 
