@@ -26,8 +26,8 @@ inLanguage: en
 app_links: []
 isBasedOnUrl: 'https://ma.ttias.be/pi-hole-dns-based-blacklist-ads-tracking-raspberry-pi/'
 title: 'Pi-Hole: A DNS-based blacklist for ads and tracking for Raspberry Pi'
-datePublished: '2017-08-30T20:24:06.486Z'
-dateModified: '2017-08-30T20:24:05.810Z'
+datePublished: '2017-08-30T20:30:17.639Z'
+dateModified: '2017-08-30T20:30:16.816Z'
 via: {}
 inFeed: true
 sourcePath: >-
